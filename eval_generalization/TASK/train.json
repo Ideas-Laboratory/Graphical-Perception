@@ -35,9 +35,9 @@
         "loadThread":8,
 
         "learnType":"Adam",
-        "learnRate":0.000010,
+        "learnRate":0.00010,
 
-        "adam_weight_decay":0.00005,
+        "adam_weight_decay":0.01,
         "sgd_momentum":0.9,
 
         "learnRateMulti":"1.0",
