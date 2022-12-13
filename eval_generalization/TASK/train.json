@@ -1,5 +1,5 @@
 {
-    "name":"{$modelName}_{$datasetName}_lw",
+    "name":"{$modelName}_{$datasetName}",
 
     "utility":
     {
