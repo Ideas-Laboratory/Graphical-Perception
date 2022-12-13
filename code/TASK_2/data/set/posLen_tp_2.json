@@ -1,9 +1,0 @@
-{
-    "genType":"StackGenerator",
-    "trainPairCount":16000,
-    "testPairCount":1000,
-    "validPairCount":10000,
-    "padding":false,
-    "classCount":1,
-    "param":"{$include} detail/posLen/position_length_type_2.json"
-}

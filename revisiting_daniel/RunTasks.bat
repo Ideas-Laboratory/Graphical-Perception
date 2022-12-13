@@ -1,1 +1,0 @@
-python TaskScheduler.py --config_file TASK_2/scheduler.json

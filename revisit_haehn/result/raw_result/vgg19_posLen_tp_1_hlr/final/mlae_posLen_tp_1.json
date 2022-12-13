@@ -1,0 +1,24 @@
+[
+    {
+        "path": "result/raw_result/vgg19_posLen_tp_1_hlr/tests/posLen_tp_1/Iter_240000/resultInfo.json",
+        "loss": {
+            "MLAE": {
+                "avg": -2.17770348162612,
+                "std": 0.2208848756648478
+            },
+            "MLAE_unmatch": {
+                "avg": -3.0,
+                "std": 0.0
+            },
+            "ABS": {
+                "avg": 0.0009866107410099348,
+                "std": 0.0003478517780875726
+            },
+            "ABS_unmatch": {
+                "avg": 0.0,
+                "std": 0.0
+            },
+            "count": 10000
+        }
+    }
+]

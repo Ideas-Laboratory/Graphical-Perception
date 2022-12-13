@@ -1,0 +1,28 @@
+// conditions: palettailor, tableau 20 our assignment, our generation
+let scatterplots_data_info = [
+    { "fileName": "6 classes - 0", "clusterType": 0, "clusterNum": 6, "clusterId": 1, "palettes": [["#91876c", "#2dff69", "#e226e0", "#ffd118", "#21aad6", "#ff1d32"], ["#bab0ac", "#e15759", "#fabfd2", "#8cd17d", "#d7b5a6", "#a0cbe8"], ["#f1f0f1", "#c644f7", "#ffd4d2", "#b0ff98", "#c9eeff", "#f8f3b8"]] },
+    { "fileName": "6 classes - 1", "clusterType": 1, "clusterNum": 6, "clusterId": 1, "palettes": [["#1e7eff", "#00b7a6", "#f440f3", "#ff1233", "#78fe41", "#ffbb0c"], ["#86bcb6", "#e15759", "#bab0ac", "#a0cbe8", "#d7b5a6", "#fabfd2"], ["#fcdce8", "#ff2812", "#dcf6f6", "#fdf1b9", "#c4c4c2", "#c2ffa9"]] },
+    { "fileName": "6 classes - 2", "clusterType": 2, "clusterNum": 6, "clusterId": 2, "palettes": [["#36c0d0", "#61fd4a", "#ff8828", "#ff1349", "#ffa5ce", "#bc4bfe"], ["#bab0ac", "#ffbe7d", "#4e79a7", "#d7b5a6", "#a0cbe8", "#fabfd2"], ["#c9ffc1", "#c3edff", "#b451ff", "#ffddd9", "#c6c9c8", "#ffe9b4"]] },
+    { "fileName": "6 classes - 3", "clusterType": 3, "clusterNum": 6, "clusterId": 0, "palettes": [["#9462ff", "#ff89b0", "#ffdc00", "#25a6be", "#fe2d03", "#4afd54"], ["#e15759", "#ffbe7d", "#d7b5a6", "#a0cbe8", "#bab0ac", "#fabfd2"], ["#fe2c05", "#ffecc2", "#ffeaf1", "#d1f3ff", "#d1fcc7", "#c9caca"]] },
+    { "fileName": "8 classes - 0", "clusterType": 0, "clusterNum": 8, "clusterId": 3, "palettes": [["#945fff", "#5dbde8", "#16a342", "#53ffce", "#ff46a3", "#baff12", "#b58300", "#ff2023"], ["#fabfd2", "#bab0ac", "#d4a6c8", "#e15759", "#8cd17d", "#d7b5a6", "#a0cbe8", "#86bcb6"], ["#f1f1f1", "#d4e9ff", "#ffebb7", "#bf49fc", "#c6fec3", "#f7f76b", "#ffd6e0", "#bec8d2"]] },
+    { "fileName": "8 classes - 1", "clusterType": 1, "clusterNum": 8, "clusterId": 0, "palettes": [["#a27f2f", "#5972ff", "#ffb0c5", "#15fb65", "#fd294e", "#e635df", "#00ecf9", "#f8f900"], ["#4e79a7", "#bab0ac", "#ffbe7d", "#a0cbe8", "#8cd17d", "#d7b5a6", "#d4a6c8", "#fabfd2"], ["#fe2b06", "#f7f859", "#d3fabc", "#ffdeaf", "#d3afff", "#ddf6f6", "#ffeadb", "#c5c8ba"]] },
+    { "fileName": "8 classes - 2", "clusterType": 2, "clusterNum": 8, "clusterId": 0, "palettes": [["#fef721", "#ff5a79", "#ff7a1f", "#00ffff", "#de2be4", "#34971a", "#5176ff", "#30ff7c"], ["#e15759", "#bab0ac", "#a0cbe8", "#fabfd2", "#86bcb6", "#ffbe7d", "#8cd17d", "#d7b5a6"], ["#ff272b", "#d9ceff", "#d7f7f7", "#d0fccb", "#f6f944", "#ffe8f0", "#ffdcaa", "#cacfc3"]] },
+    { "fileName": "8 classes - 3", "clusterType": 3, "clusterNum": 8, "clusterId": 1, "palettes": [["#ae57fe", "#f8f903", "#00a4ac", "#ff1945", "#419dff", "#00ff78", "#ffb1c4", "#389c00"], ["#d4a6c8", "#e15759", "#86bcb6", "#fabfd2", "#a0cbe8", "#bab0ac", "#d7b5a6", "#f1ce63"], ["#75e7ff", "#ff2519", "#c6c7ad", "#c9fecb", "#bde6ff", "#f7f1d9", "#f6f780", "#ffd7eb"]] },
+    { "fileName": "10 classes - 0", "clusterType": 0, "clusterNum": 10, "clusterId": 2, "palettes": [["#0093bb", "#ff1a1a", "#46fe56", "#d040f4", "#ff5b93", "#37ffff", "#dcaff9", "#ff8e26", "#aa9f51", "#f8f900"], ["#ffbe7d", "#a0cbe8", "#e15759", "#8cd17d", "#f1ce63", "#d4a6c8", "#86bcb6", "#bab0ac", "#fabfd2", "#d7b5a6"], ["#c3c6d0", "#51e7c5", "#ff2811", "#f3f2db", "#ffd2ff", "#fef488", "#cae4ff", "#d5fcbc", "#ffe7e4", "#e9c388"]] },
+    { "fileName": "10 classes - 1", "clusterType": 1, "clusterNum": 10, "clusterId": 2, "palettes": [["#1aacff", "#ff0b61", "#02ffff", "#ffc1f4", "#b251ff", "#c97045", "#7f8490", "#efcb89", "#9efe29", "#329716"], ["#bab0ac", "#fabfd2", "#e15759", "#ffbe7d", "#d4a6c8", "#a0cbe8", "#d7b5a6", "#f1ce63", "#8cd17d", "#86bcb6"], ["#eddfaa", "#ffbc88", "#b352ff", "#ffd5cb", "#c7ffb9", "#d9f7f7", "#b4cdc2", "#fff134", "#cfcad9", "#99dcf6"]] },
+    { "fileName": "10 classes - 2", "clusterType": 2, "clusterNum": 10, "clusterId": 0, "palettes": [["#bb7322", "#ff90ab", "#5a8eff", "#00a000", "#ff1138", "#21e3ff", "#968ea0", "#e7fe00", "#d175ff", "#00ff8c"], ["#e15759", "#8cd17d", "#bab0ac", "#fabfd2", "#d4a6c8", "#ffbe7d", "#d7b5a6", "#86bcb6", "#a0cbe8", "#f1ce63"], ["#ff2234", "#cff8fb", "#cac9c4", "#ffc6eb", "#f8f840", "#ffbd40", "#2ef2ad", "#ffca97", "#cafbc1", "#c6a6c7"]] },
+    { "fileName": "10 classes - 3", "clusterType": 3, "clusterNum": 10, "clusterId": 1, "palettes": [["#c049fc", "#e9b285", "#94ab84", "#dc5e00", "#fff701", "#ff8bcc", "#2c8db2", "#00ffff", "#5bfc4c", "#ff155f"], ["#d4a6c8", "#e15759", "#a0cbe8", "#ff9d9a", "#86bcb6", "#d7b5a6", "#ffbe7d", "#bab0ac", "#8cd17d", "#fabfd2"], ["#ffc5e2", "#ff2417", "#f3f3cb", "#dbf6f6", "#d9d4c9", "#b7f29a", "#c5e7ff", "#fee2e8", "#ffe4b9", "#ffdc35"]] }
+]
+
+let training_data_info = [
+    { "fileName": "5 classes - 3", "clusterType": 3, "clusterNum": 5, "clusterId": 3, "palette": ["#c5ccd4", "#ffd3c8", "#8cffae", "#ff2a07", "#cdecff"] },
+    { "fileName": "7 classes - 2", "clusterType": 2, "clusterNum": 7, "clusterId": 2, "palette": ["#6c6bff", "#d7ff30", "#00a300", "#b57b00", "#ff212c", "#f70faa", "#17bcff"] },
+    { "fileName": "9 classes - 0", "clusterType": 0, "clusterNum": 9, "clusterId": 3, "palette": ["#86bcb6", "#d7b5a6", "#ffbe7d", "#4e79a7", "#d4a6c8", "#f1ce63", "#bab0ac", "#fabfd2", "#a0cbe8"] }
+]
+
+let distractor_data_info = [
+    { "fileName": "4 classes - 0", "clusterType": 0, "clusterNum": 4, "clusterId": 0, "palette": ["#59a14f", "#b07aa1", "#e15759", "#edc948"] },
+    { "fileName": "4 classes - 1", "clusterType": 1, "clusterNum": 4, "clusterId": 1, "palette": ["#b07aa1", "#59a14f", "#edc948", "#e15759"] },
+    { "fileName": "4 classes - 2", "clusterType": 2, "clusterNum": 4, "clusterId": 2, "palette": ["#59a14f", "#4e79a7", "#e15759", "#edc948"] },
+    { "fileName": "4 classes - 3", "clusterType": 3, "clusterNum": 4, "clusterId": 3, "palette": ["#e15759", "#edc948", "#59a14f", "#4e79a7"] }
+]

@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/static/css/index.css">
+    <style>
+        body {
+            font: 11px sans-serif;
+            background: #eee;
+            text-align: center;
+        }
+
+        .axis path,
+        .axis line {
+            fill: none;
+            stroke: rgba(0, 0, 0, 0.3);
+            shape-rendering: crispEdges;
+        }
+
+        .submit {
+            background: #555;
+            color: #eee;
+            border: none;
+            border-radius: 5px;
+            width: 50px;
+            padding: 10px;
+            text-align: center;
+            font-size: x-large;
+            text-decoration: none;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+            text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        .submit:hover {
+            background: #333;
+            color: #ccc;
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+            text-shadow: 0 0 0 rgba(0, 0, 0, 0.3);
+        }
+
+        li {
+            font-size: 20px;
+            line-height: 30px;
+            border: none ! important;
+        }
+
+        #progress_container {
+            width: 90%;
+            height: 40px;
+            border-radius: 10px;
+            background: #ddd;
+            margin: 0 auto;
+            margin-top: 50px;
+            box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3) inset;
+        }
+
+
+        #progress {
+            width: 100px;
+            height: 40px;
+            /*padding: 5px;*/
+            line-height: 40px;
+            background: #007acd;
+            border-radius: 10px;
+        }
+
+        #predict_value {
+            width: 500px;
+            height: 40px;
+            /*padding: 5px;*/
+            line-height: 40px;
+            background: #007acd;
+            border-radius: 10px;
+        }
+
+        #progress p {
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        li {
+            font-size: 20px;
+            line-height: 30px;
+            border: none ! important;
+            list-style-type: none;
+        }
+
+    </style>
+    <script type="text/javascript" src="/static/js/lib/d3.v4.min.js"></script>
+    <script type="text/javascript" src="/static/js/lib/jquery-3.2.1.min.js"></script>
+
+</head>
+
+<body>
+    <div id="annotationDiv" style="text-align: center;">
+        <h1>Training trials</h1>
+        <h2 id="test" style="display: none">{{label}}</h2>
+<!--        <ul>-->
+<!--            {% if label=="ele_angle" %}-->
+<!--            <li>-->
+<!--                Look at the image below to predict the angle of the graph-->
+<!--            </li>-->
+<!--            {% endif %}-->
+<!--        </ul>-->
+    </div>
+    <br>
+    {% if label=="posLen_tp_1_rand_c" %}
+    <div class="describe">
+        <li>In the following trials, you will be given a set of bar charts in sequence. Each chart contains two target bars marked with black dots.</li>
+        <li><b>Your mission is to estimate the length ratio of the shorter target bar to the taller one.</b></li>
+        <li>For example, if you think the length of one target bar is half to the other, then your estimation should be 0.5.</li>
+        <li><U>You can drag the slider to find your estimated value or type it directly into the text box.</U></li>
+    </div>
+    {% endif %}
+    {% if label=="posLen_tp_2_rand_c" %}
+    <div class="describe">
+        <li>In the following trials, you will be given a set of bar charts in sequence. Each chart contains two target bars marked with black dots.
+        </li><li><b>Your mission is to estimate the length ratio of the shorter target bar to the taller one.</b>
+    </li><li>For example, if you think the length of one target bar is half to the other, then your estimation should be 0.5.</li>
+        <li><U>You can drag the slider to find your estimated value or type it directly into the text box.</U></li>
+    </div>
+    {% endif %}
+    {% if label=="posLen_tp_3_rand_c" %}
+    <div class="describe">
+        <li>In the following trials, you will be given a set of bar charts in sequence. Each chart contains two target bars marked with black dots.
+        </li><li><b>Your mission is to estimate the length ratio of the shorter target bar to the taller one.</b>
+        </li><li>For example, if you think the length of one target bar is half to the other, then your estimation should be 0.5.
+        </li>
+        <li><U>You can drag the slider to find your estimated value or type it directly into the text box.</U></li>
+    </div>
+    {% endif %}
+    {% if label=="posLen_tp_4_rand_c" %}
+    <div class="describe">
+        <li>In the following trials, you will be given a set of bar charts in sequence. Each chart contains two target bars marked with black dots.
+        </li><li><b>Your mission is to estimate the length ratio of the shorter target bar to the taller one.</b>
+    </li><li>For example, if you think the length of one target bar is half to the other, then your estimation should be 0.5.</li>
+        <li><U>You can drag the slider to find your estimated value or type it directly into the text box.</U></li>
+    </div>
+    {% endif %}
+    {% if label=="posLen_tp_5_rand_c" %}
+    <div class="describe">
+        <li>In the following trials, you will be given a set of bar charts in sequence. Each chart contains two target bars marked with black dots.
+        </li><li><b>Your mission is to estimate the length ratio of the shorter target bar to the taller one.</b>
+    </li><li>For example, if you think the length of one target bar is half to the other, then your estimation should be 0.5.</li>
+        <li><U>You can drag the slider to find your estimated value or type it directly into the text box.</U></li>
+    </div>
+    {% endif %}
+    <br>
+    <br>
+    <div id="renderDiv" style="text-align:center;width: 100%;height:400px;"></div>
+    <br>
+    <div id="true_value" style="font-size: 20px;font-weight: bold;visibility: hidden" >True Value : </div>
+
+    <div id="slider_text_button" >
+        <main>
+            <div class="slider" id="slider">
+                <span id="value" class="selected">
+                    0
+                </span>
+                <input type="range" id="range" min="0" max="100" value="0" onchange="changeV()"/>
+            </div>
+        </main>
+        <div id="predict_test_button" style="margin-top: 20px;">
+            <input type="text" id="input_predict" oninput="watch(event)" onporpertychange="watch(event)" style="width: 500px;height: 50px">
+            <button id="next_button" onclick="Next()" type="button" style="height: 50px;width: 100px">Next</button>
+        </div>
+    </div>
+
+
+
+    <div id="user_study_div" style="text-align:center;">
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <a id="start_button" class="submit" style="margin-top: 10px;display: none;width: 200px;"
+        onclick="startExperiment()">
+        Start Experiment!
+    </a>
+    <div id="progress_container" style="margin-top: 100px">
+        <div id="progress">
+            <p id="progressNum">10%</p>
+        </div>
+    </div>
+
+
+    <script>
+        parameter={
+            
+            'posLen_tp_1_rand_c':{'num':9,'min':0,'max':100,'maxv':100,'filename':'bar_type1'},
+            'posLen_tp_2_rand_c':{'num':9,'min':0,'max':100,'maxv':100,'filename':'stack_type2'},
+            'posLen_tp_3_rand_c':{'num':9,'min':0,'max':100,'maxv':100,'filename':'bar_type3'},
+            'posLen_tp_4_rand_c':{'num':9,'min':0,'max':100,'maxv':100,'filename':'stack_type4'},
+            'posLen_tp_5_rand_c':{'num':9,'min':0,'max':100,'maxv':100,'filename':'stack_type5'},
+            
+        }
+        let radio_list=['posLen_tp_1_rand_c','posLen_tp_2_rand_c','posLen_tp_3_rand_c','posLen_tp_4_rand_c','posLen_tp_5_rand_c'];
+        let value_list=['posLen_tp_6_rand_c','posLen_tp_8_rand_c','posAngle_pie_tp_2']
+        let test_time = undefined;
+        let train_result=[];
+        let user_result = [];
+        let rand_number=5;
+        let robustness_test_number=1000
+    </script>
+
+    <script>
+
+        const slider=document.getElementById('slider')
+        const range = document.getElementById('range');
+        const input_predict = document.getElementById('input_predict');
+        const predict_test_button=document.getElementById('predict_test_button')
+        const next_button=document.getElementById('next_button')
+        const slider_text_button=document.getElementById('slider_text_button')
+        const four_ratio=document.getElementById('four_ratio')
+        const true_value=document.getElementById('true_value')
+        const test=document.getElementById('test')
+
+        label=test.textContent
+        console.log(label)
+        filename=parameter[label]['filename']
+        range.maxv=parameter[label]['maxv']
+        range.max=parameter[label]['max']
+        range.min=parameter[label]['min']
+
+        // if (label.search("posAngle")!=-1){
+        //     slider_text_button.style.display="none"
+        //     four_ratio.style.display="inline"
+        //     // four_ratio.style.visibility="visible"
+        // }
+
+        document.getElementById('value').innerHTML =range.min
+
+        if (input_predict.value==""){
+            console.log("ppp")
+            next_button.disabled=true;
+        }
+
+        $(function(){
+
+            $('#range').bind('input propertychange', function() {
+                $('#value').html($(this).val()/range.maxv);
+                $('input_predict').html($(this).val()/range.maxv)
+                input_predict.value=$(this).val()/range.maxv
+            });
+
+        })
+
+        $('#input_predict').on('input propertychange keydown change', function() {
+            var self = this;
+            $('#value').html($(this).val());
+            $('#range').val($(this).val()*range.maxv)
+            // $('#range').html($(this).val()*range.maxv);
+
+        });
+
+
+        function changeV() {
+            console.log("ttttttt")
+            document.getElementById("true_value").style.visibility="visible";
+            console.log(range.value);
+            input_predict.value=range.value/range.maxv
+            document.getElementById('value').innerHTML = range.value/range.maxv;
+            next_button.disabled=false;
+            console.log(range.maxv)
+        }
+        function watch(){
+            document.getElementById("true_value").style.visibility="visible";
+            console.log("qqqqqqqqqqq")
+            console.log("in")
+            next_button.disabled=false;
+        }
+
+        function clear() {
+            input_predict.value=""
+            range.value=0
+            document.getElementById("value").innerText=0
+        }
+
+        function Next() {
+            console.log(input_predict.value)
+
+            //在这加个判断值outlier
+            if ((label==="posLen_tp_1_rand_c" || label==="posLen_tp_2_rand_c" || label==="posLen_tp_3_rand_c" || label==="posLen_tp_7_rand_c") && (input_predict.value>1 || input_predict.value<=0)){
+                window.alert("your input is out of range,please enter again");
+                clear()
+                return;
+            }
+
+            if ((label==="posLen_tp_6_rand_c" || label==="posLen_tp_8_rand_c") && (input_predict.value<=0 || input_predict.value>100)){
+                window.alert("your input is out of range,please enter again");
+                clear()
+                return;
+            }
+
+            if ((label==="posAngle_pie_tp_2") && (input_predict.value<=0 || input_predict.value>180)){
+                window.alert("your input is out of range,please enter again");
+                clear()
+                return;
+            }
+
+            if (input_predict.value==""){
+                return
+            }
+            if (isNaN(input_predict.value)){
+                return
+            }
+            if (trainingId < data.length - 1) {
+                trainingId++;
+                train_result.push(parseFloat(input_predict.value))
+                document.getElementById("true_value").style.visibility="hidden";
+                document.getElementById('value').innerHTML=0
+                input_predict.value=''
+                range.value=0
+                startOneTrainingTrial()
+                return;
+            }
+            if (trainingId === data.length - 1) {
+                d3.select("#start_button").style("display", "inline-block")
+                d3.select("#annotationDiv").selectAll("*").remove();
+                let ul = d3.select("#annotationDiv").append("ul")
+                    .style("color", "red");
+                ul.append("li").text("Now we will start the real study. Please perform the task as accurately as possible.")
+                ul.append("li").text("If you are ready, press the button to start.")
+                trainingId++
+                console.log("kkk")
+                train_result.push(parseFloat(input_predict.value))
+                console.log(train_result)
+                // range.style.visibility="hidden"
+                // predict_test_button.style.display="none"
+                // slider.style.display="none"
+                document.getElementById("true_value").style.visibility="hidden";
+                true_value.style.display="none"
+                slider_text_button.style.display="none"
+                return;
+            }
+            if (trainingId === data.length) {
+                test_time = (new Date() - test_time) / 1000;
+                user_result.push({
+                    'label':label,
+                    'test_id':Math.floor(trialId/rand_number),
+                    'id':data_test_all[Math.floor(trialId/rand_number)][trialId%rand_number],
+                    'predict_value':input_predict.value
+                })
+                trialId++
+                document.getElementById('value').innerHTML=0
+                input_predict.value=''
+                range.value=0
+                startOneExperimentTrial()
+                return;
+            }
+
+            let div = d3.select("#user_study_div");
+            let span = div.append("span").attr("class", "rect")
+                .style("width", "40px").style("height", "40px").style("display", "inline-block")
+                .style("margin-left", "10px").style("background", d3.select(this).attr("fill"))
+                .style("text-align", "center");
+        }
+    </script>
+
+    <script>
+
+
+        /**
+         * Shuffles array in place.
+         * @param {Array} a items An array containing the items.
+         */
+
+
+        //global variables:
+        let svg_margin = {
+            top: 20,
+            right: 20,
+            bottom: 20,
+            left: 20
+        },
+            radius = 4,
+            SVGWIDTH = 400,
+            SVGHEIGHT = 400;
+        let svg_width = SVGWIDTH - svg_margin.left - svg_margin.right,
+            svg_height = SVGHEIGHT - svg_margin.top - svg_margin.bottom;
+        let bgcolor = "#fff";
+
+
+        function loadData(text, labelSet) {
+            //parse pure text to data, and cast string to number
+            let source_data = d3.csvParseRows(text, function (d) {
+                if (!isNaN(d[0]) && !isNaN(d[1])) {
+                    return d; //.map(Number);
+                }
+            }).map(function (d) { // change the array to an object, use the first two feature as the position
+                //source data
+                var row = {};
+                row.label = d[2];
+                labelSet.add(row.label);
+                row.x = +d[0];
+                row.y = +d[1];
+                return row;
+            });
+            return source_data;
+        }
+
+        function rotateAngle(x1, y1, x2, y2, theta) {
+            let x = (x1 - x2) * Math.cos(theta) - (y1 - y2) * Math.sin(theta) + x2;
+            let y = (x1 - x2) * Math.sin(theta) + (y1 - y2) * Math.cos(theta) + y2;
+            return [x, y]
+        }
+
+        function drawplot_train(data) {
+
+            // add the graph canvas to the body of the webpage
+            let scatterplot_svg = d3.select("#renderDiv").append("svg").style("margin-left", 20)
+                .attr("width", SVGWIDTH).attr("height", SVGHEIGHT).style("background-color", bgcolor);
+            let scatterplot = scatterplot_svg.append("g");
+            console.log("/static/img/"+label+"_testdata_0/angle_"+data+".png")
+                // .attr("transform", "translate(" + svg_margin.left + "," + svg_margin.top +  ")");
+            scatterplot.append("image").attr("xlink:href","/static/img/"+label+"_train/"+filename+"_"+data+".png").attr("width","80%").attr("height","80%").attr("transform","translate("+(SVGWIDTH)/10+","+(SVGHEIGHT)/10+")");;
+
+            d3.json("/static/data/"+label+"_train/"+filename+"_"+data+".json",function(error,data2) {
+                    if (error) throw error;
+                    true_value.textContent="True Value : "+data2[0].toFixed(2)
+
+                    console.log(true_value.textContent)
+                }
+            );
+
+
+            console.log(trainingId)
+
+
+        }
+        function drawplot(data) {
+
+            // add the graph canvas to the body of the webpage
+            let scatterplot_svg = d3.select("#renderDiv").append("svg").style("margin-left", 20)
+                .attr("width", SVGWIDTH).attr("height", SVGHEIGHT).style("background-color", bgcolor);
+            let scatterplot = scatterplot_svg.append("g");
+            console.log("/static/img/"+label+"_testdata_"+Math.floor(trialId/rand_number)+"/angle_"+data+".png")
+            console.log(data)
+            // .attr("transform", "translate(" + svg_margin.left + "," + svg_margin.top +  ")");
+            scatterplot.append("image").attr("xlink:href","/static/img/"+label+"_testdata_"+Math.floor(trialId/rand_number)+"/"+filename+"_"+data+".png").attr("width","80%").attr("height","80%").attr("transform","translate("+(SVGWIDTH)/10+","+(SVGHEIGHT)/10+")");
+            console.log("hcdsjvncsik")
+        }
+
+
+    </script>
+
+    <script>
+        /**
+         * training process
+         */
+        data=[0,1,2]
+        // for(i=0;i<3;i++){
+        //     while (true){
+        //         random_num=Math.floor(Math.random()*100);
+        //         if (data.includes(random_num)){
+        //
+        //         }else{
+        //             data.push(random_num);
+        //             break;
+        //         }
+        //     }
+        // }
+        console.log(data)
+        let trainingId = 0;
+        function startOneTrainingTrial() {
+
+            d3.select("#renderDiv").selectAll("svg").remove()
+            let containerWidth = document.getElementById("progress_container").offsetWidth;
+            document.getElementById("progress").style.width = (containerWidth * (trainingId + 1) / data.length) + "px";
+            document.getElementById("progressNum").innerHTML = (trainingId + 1) + "/" + data.length;
+
+            drawplot_train(data[trainingId]);
+
+            // draw options
+            d3.select("#user_study_div").selectAll("span").remove()
+
+        }
+
+    </script>
+
+    <script>
+        /**
+         * real experiment
+         */
+        data_test_all=[]
+        for (j=0;j<parameter[label]['num'];j++){
+            data_test=[]
+            for(i=0;i<rand_number;i++){
+                while (true){
+                    random_num=Math.floor(Math.random()*robustness_test_number);
+                    if (data_test.includes(random_num)){
+
+                    }else{
+                        data_test.push(random_num);
+                        break;
+                    }
+                }
+            }
+            data_test_all.push(data_test)
+        }
+        test_length=rand_number*parameter[label]['num']
+
+        console.log(data_test_all)
+        let trialId = 0
+        function startExperiment() {
+            d3.select("#start_button").style("display", "none")
+            d3.select("#annotationDiv").style("display", "none")
+            // slider.style.visibility="visible"
+            // predict_test_button.style.visibility="visible"
+            // slider.style.display="inline"
+            // predict_test_button.style.display="inline"
+            slider_text_button.style.display="inline"
+            input_predict.value=""
+            range.value=0
+            document.getElementById('value').innerHTML=0
+                        //在这做一个判断，判断是不是在瞎填
+            decideContinue()
+            startOneExperimentTrial()
+        }
+        
+        function decideContinue() {
+            true_value_list=[]
+            sum=0
+            MLAE=0
+            $.ajaxSettings.async = false;  //设为同步请求
+            for (i=0;i<3;i++){
+                $.getJSON("/static/data/"+label+"_train/"+filename+"_"+i+".json",{"k":1},function (data) {
+                    console.log(data)
+                    true_value_list.push(data[0])
+                })
+            }
+            $.ajaxSettings.async = true;  //设为异步请求
+            // console.log(true_value_list)
+            sum=0
+            for (i=0;i<3;i++){
+                sum+=Math.log2(Math.abs(true_value_list[i]-train_result[i])*100+0.125)
+            }
+            MLAE=sum/3
+            if((radio_list.indexOf(label) != -1) && (MLAE>4.5)){
+                var url = "/noqualified"
+
+                $.get(url, function (d) {
+                    window.location.href = d;
+                });
+                return;
+            }
+            if((value_list.indexOf(label) != -1) && (MLAE>10.5)){
+                var url = "/noqualified"
+
+                $.get(url, function (d) {
+                    window.location.href = d;
+                });
+                return;
+            }
+
+            // if(MLAE>4.5) {
+            //     var url = "/noqualified"
+            //
+            //     $.get(url, function (d) {
+            //         window.location.href = d;
+            //     });
+            //     return;
+            // }
+            console.log(MLAE)
+        }
+
+        function startOneExperimentTrial() {
+            if (trialId === test_length) {
+                console.log(user_result);
+                var url = "/result/1",
+                    data = {
+                        result: JSON.stringify(user_result)
+                    };
+                $.post(url, data, function (d) {
+                    window.location.href = d;
+                });
+                return;
+            }
+            d3.select("#renderDiv").selectAll("svg").remove()
+            let containerWidth = document.getElementById("progress_container").offsetWidth;
+            document.getElementById("progress").style.width = (containerWidth * (trialId + 1) / test_length) + "px";
+            document.getElementById("progressNum").innerHTML = (trialId + 1) + "/" + test_length;
+            console.log(trialId)
+            drawplot(data_test_all[Math.floor(trialId/rand_number)][trialId%rand_number]);
+
+            // document.getElementsByClassName("describe").innerHTML="<b>estimate the absolute length of a bar in bar chart</b>"
+            const describe=document.getElementsByClassName("describe")
+            if (label==="posLen_tp_6_rand_c" || label==="posLen_tp_8_rand_c"){
+                for(i=0;i<describe.length;i++){
+                    describe[i].innerHTML="<h1>Try your best to accurately estimate the absolute length of the bar marked with a dot in the bar chart</h1>"
+                }
+            }
+            else if(label==="posAngle_pie_tp_2"){
+                for(i=0;i<describe.length;i++){
+                    describe[i].innerHTML="<h1>Try your best to accurately estimate the absolute angle of the sector marked with a dot in the pie chart</h1>"
+                }
+            }
+            else {
+                for(i=0;i<describe.length;i++){
+                    describe[i].innerHTML="<h1>Try your best to accurately estimate the length ratio of two bars marked with dots in the bar chart</h1>"
+                }
+            }
+
+            // document.getElementsByClassName("describe").innerHTML="<b>estimate the absolute length of a bar in bar chart</b>"
+            // draw options
+            d3.select("#user_study_div").selectAll("span").remove()
+
+            // start timer
+            test_time = new Date();
+
+        }
+    </script>
+
+    <script>
+
+        startOneTrainingTrial()
+
+    </script>
+</body>
+
+</html>

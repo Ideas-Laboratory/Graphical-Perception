@@ -1,0 +1,111 @@
+<html>
+
+<head>
+    <script src="/static/js/lib/d3.v4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <style>
+        body {
+            font: 28px sans-serif;
+            background: #eee;
+            text-align: center;
+        }
+
+        #consent {
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 50px;
+            text-align: left;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        #invalidMessage {
+            display: none;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="consent" action="/consent_info" method="post" name="consent_info">
+        <ul>
+            <li>
+
+                {% if taskName=="highlighting" %}
+                <h2>Task: Graph perception</h2>
+                {% endif %}
+                {% if taskName=="counting" %}
+                <h2>Task: Counting Class Number</h2>
+                {% endif %}
+
+            </li>
+            <li>
+                <p>
+                    Please enter your Amazon Worker Id. <strong>You may only complete this HIT once.</strong> Subsequent
+                    completions cannot be accepted:
+                    <br>
+
+                    <input type="text" id="workerId" name="workerId" size="30" required />
+                    <button id="checkId" class="submit" type="button" onclick="validateId()">Check ID</button>
+                    <br>
+
+                    <span id="invalidMessage">
+                        Our records show that you have taken part in this study before, so we cannot allow you to take
+                        this HIT again at this time. Please contact us if you feel this is in error.
+                    </span>
+                </p>
+
+                <p>
+                    <button id="consentYes" disabled="true" type="submit">I Agree</button>
+                </p>
+
+                <p>
+                    <strong>Note: </br>
+                        1. This HIT requires a modern browser. If you are not using Chrome or Firefox, the "I
+                        Agree" button may not activate even after entering your Worker ID. </br>
+                        2. Please do not use mobile devices (touchscreen) for this study. </br>
+                        3. Please do not refresh this page, otherwise, you need to do this experiment again!</strong>
+                </p>
+            </li>
+        </ul>
+    </form>
+
+
+</body>
+<html>
+
+
+<script>
+    let workerId;
+    d3.selectAll('#workerId')
+        .on('keypress', function () {
+            workerId = this.value;
+        })
+        .on('blur', function () {
+            workerId = this.value;
+        });
+
+    function validateId() {
+        if (workerId) {
+            let user_info = {{ userInfo | safe }};
+            console.log(user_info);
+            // read the workers list
+            let workers = []
+            for (let w = 0; w < user_info.length; w++) {
+                workers.push(user_info[w][0]);
+            }
+            // console.log(workerId, workers, workers.indexOf(workerId));
+
+            if (workers.indexOf(workerId) == -1) {
+                d3.select('#invalidMessage').style('display', null);
+                d3.select('#consentYes').attr('disabled', null);
+                d3.select('#consentYes').attr('class', "submit");
+            } else {
+                d3.select('#invalidMessage').style('display', 'inline');
+            }
+
+        }
+    }
+</script>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>
+		User Info
+	</title>
+	<script src="/static/js/lib/d3.v4.min.js"></script>
+	<script type="text/javascript" src="/static/js/lib/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+
+	<style>
+		.response {
+			margin-top: 16px;
+		}
+
+		#submitComments {
+			margin-top: 16px;
+		}
+	</style>
+
+</head>
+
+<body>
+	<form id="usr_info" class="usr_info" action="/user_info" method="post" name="usr_info">
+		<ul >
+			<li>
+				<h1> Questionnaire </h1>
+				<h1 id="label_name" style="display: none"> {{label}} </h1>
+			</li>
+
+		</ul>
+
+		<ul id="form_list">
+			<li>
+
+				<p><strong>
+					During the experiment, we have used different noises (or design variations),
+					e.g., background color, to generate various charts to test how these noises affect your estimation.
+					Please rate the influence of the following noises on your estimations on a scale of 0~5.
+				</strong></p>
+				<p>0 indicates that you were not affected at all, or you did not even notice these noises during the experiment.</p>
+				<p>5 indicates that these noises severely affected your judgments, and you could have given more precise estimations without these noises.</p>
+			</li>
+
+		</ul>
+
+		<ul>
+
+
+<!--			<li>-->
+<!--				<div id="noise">Background color-->
+<!--					<strong style="color: red">*</strong>-->
+<!--					<div id="noisefam">-->
+<!--						<input type="radio" id="0" name="noise" value=0> 0-->
+<!--						<input type="radio" id="1" name="noise" value=1> 1-->
+<!--						<input type="radio" id="2" name="noise" value=2> 2-->
+<!--						<input type="radio" id="3" name="noise" value=3> 3-->
+<!--						<input type="radio" id="4" name="noise" value=4> 4-->
+<!--						<input type="radio" id="5" name="noise" value=5> 5-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</li>-->
+		</ul>
+		<ul>
+
+			<li>
+				<div class="submit">
+					<p>Have you encountered any other issues during the study or any other comments? Please tell us here.</p>
+					<textarea name="comment_additional" rows="4" cols="80"></textarea>
+				</div>
+
+
+			</li>
+			<li>
+				<p>
+					Thank you! Before you submit, please fill out the following demographics form.
+				</p>
+			</li>
+			<li>
+				<div id="age">Your age: <strong style="color: red">*</strong>
+					<div id="ages">
+						<input type="radio" id="a1" name="age" value="18-25"> 18-25
+						<input type="radio" id="a2" name="age" value="25-39"> 25-39
+						<input type="radio" id="a3" name="age" value="40-49"> 40-49
+						<input type="radio" id="a4" name="age" value="50-59"> 50-59
+						<input type="radio" id="a5" name="age" value="60+"> 60+
+						<input type="radio" id="a6" name="age" value="Unspecified"> Unspecified
+					</div>
+				</div>
+			</li>
+			<li>
+				<div id="sex">Your gender: <strong style="color: red">*</strong>
+					<div id="sexes">
+						<input type="radio" id="s1" name="sex" value="Male"> Male
+						<input type="radio" id="s2" name="sex" value="Female"> Female
+						<input type="radio" id="s3" name="sex" value="Unspecified"> Unspecified
+					</div>
+				</div>
+			</li>
+			<li>
+				<div id="degree">Highest degree obtained: <strong style="color: red">*</strong>
+					<div id="degrees">
+						<input type="radio" id="d1" name="degree" value="High School"> High School
+						<input type="radio" id="d2" name="degree" value="Bachelors"> Bachelors
+						<input type="radio" id="d3" name="degree" value="Masters"> Masters
+						<input type="radio" id="d4" name="degree" value="PhD"> PhD
+						<input type="radio" id="d5" name="degree" value="Other"> Other Professional Degree
+						<input type="radio" id="s3" name="degree" value="Unspecified"> Unspecified
+					</div>
+				</div>
+			</li>
+			<li>
+				<div id="screen_size">Your screen size is closest to: <strong style="color: red">*</strong>
+					<div id="screen_sizes">
+						<input type="radio" id="m4" name="screen_size" value="9 or smaller"> 9" or smaller
+						<input type="radio" id="m4" name="screen_size" value=11> 11"
+						<input type="radio" id="m4" name="screen_size" value=13> 13"
+						<input type="radio" id="m4" name="screen_size" value=15> 15"
+						<input type="radio" id="m4" name="screen_size" value=17> 17"
+						<input type="radio" id="m4" name="screen_size" value=19> 19"
+						<input type="radio" id="m4" name="screen_size" value=21> 21"
+						<input type="radio" id="m5" name="screen_size" value="23 or larger"> 23" or larger
+						<input type="radio" id="m5" name="screen_size" value="unsure"> I'm not sure
+					</div>
+				</div>
+			</li>
+			<li>
+				<div id="visualizations">How familiar are you with data visualizations (1 not familiar at all, 7 very
+					familiar)?
+					<strong style="color: red">*</strong>
+					<div id="visualizationfam">
+						<input type="radio" id="sc1" name="vis_experience" value=1> 1
+						<input type="radio" id="sc2" name="vis_experience" value=2> 2
+						<input type="radio" id="sc3" name="vis_experience" value=3> 3
+						<input type="radio" id="sc4" name="vis_experience" value=4> 4
+						<input type="radio" id="sc5" name="vis_experience" value=5> 5
+						<input type="radio" id="sc6" name="vis_experience" value=6> 6
+						<input type="radio" id="sc7" name="vis_experience" value=7> 7
+					</div>
+				</div>
+			</li>
+
+			<li>
+				<p><strong>A code for Mechanical Turk will generate after you submit successfully.</strong></p>
+
+				<div id="invalidanswer" style="display: none">
+					<p style="color: red">
+						In order to submit successfully, please be sure to answer all the questions with "*".
+					</p>
+				</div>
+			</li>
+
+			<li>
+				<button id="checkContent" class="submit" type="button" onclick="validateContent()">Check
+					Content</button>
+				<button id="submit" type="submit" disabled="true">Submit Form</button>
+			</li>
+		</ul>
+	</form>
+
+	<script>
+
+		tasks={
+			'posLen_tp_1_rand_c':{'num':6,'min':0,'max':100,'maxv':100,'filename':'bar_type1','robustness':['Stroke width','Title position','Bar width','Background color','Stroke color']},
+			'posLen_tp_2_rand_c':{'num':5,'min':0,'max':100,'maxv':100,'filename':'stack_type2','robustness':['Title position','Bar width','Background color','Stroke color']},
+			'posLen_tp_3_rand_c':{'num':6,'min':0,'max':100,'maxv':100,'filename':'bar_type3','robustness':['Stroke width','Title position','Bar width','Background color','Stroke color']},
+			'posLen_tp_6_rand_c':{'num':6,'min':0,'max':100,'maxv':1,'filename':'bar_type6','robustness':['Stroke width','Title position','Bar width','Background color','Stroke color']},
+			'posLen_tp_7_rand_c':{'num':6,'min':0,'max':100,'maxv':100,'filename':'bar_type7','robustness':['Stroke width','Title position','Bar width','Background color','Stroke color']},
+			'posLen_tp_8_rand_c':{'num':6,'min':0,'max':100,'maxv':1,'filename':'stack_type2','robustness':['Stroke width','Title position','Bar width','Background color','Stroke color']},
+			'posAngle_pie_tp_2':{'num':7,'min':0,'max':180,'maxv':1,'filename':'pie','robustness':['Stroke width','Title position','Radius','Center position','Background color','Stroke color']},
+			'posAngle_bar':{'num':1,'min':0,'max':100,'maxv':100,'filename':'bar','robustness':['Horizontal layout','Background color','Stroke color']},
+			'posAngle_pie':{'num':7,'min':0,'max':100,'maxv':100,'filename':'pie','robustness':['Stroke width','Title position','Radius','Center position','Background color','Stroke color']}
+		}
+
+		label=document.getElementById("label_name").textContent
+		label=label.replace(/\s+/g,"");
+		//js去掉所有空格 \s表示查找空格带上加好表示连续的空格
+
+		console.log(label.length)
+
+		let noise=tasks[label]['robustness']
+		console.log(noise)
+
+		for (i=0;i<noise.length;i++){
+			$("#form_list").append('<li>' + '<div id="'+noise[i]+'">'+noise[i] +
+					'\t\t\t\t\t<strong style="color: red">*</strong>\n' +
+					'\t\t\t\t\t<div id="noisefam">\n' +
+					'\t\t\t\t\t\t<input type="radio" id="0" name="'+noise[i]+'" value=0> 0\n' +
+					'\t\t\t\t\t\t<input type="radio" id="1" name="'+noise[i]+'" value=1> 1\n' +
+					'\t\t\t\t\t\t<input type="radio" id="0" name="'+noise[i]+'" value=2> 2\n' +
+					'\t\t\t\t\t\t<input type="radio" id="1" name="'+noise[i]+'" value=3> 3\n' +
+					'\t\t\t\t\t\t<input type="radio" id="0" name="'+noise[i]+'" value=4> 4\n' +
+					'\t\t\t\t\t\t<input type="radio" id="1" name="'+noise[i]+'" value=5> 5\n' +
+					'\t\t\t\t\t</div>\n' +
+					'\t\t\t\t</div>' + '</li>');
+		}
+
+		var data = {};
+		function validateContent() {
+			$.each($(':checked, textarea'), function (d) {
+				console.log($(this).val())
+				data[$(this).attr('name')] = $(this).val()
+			})
+			// Check validation
+			console.log(data['Background color'])
+			var isValid = data.age && data.sex && data.degree && data.screen_size && data.vis_experience
+			for (i=0;i<noise.length;i++){
+				isValid = isValid && data[noise[i]]
+			}
+			isValid = isValid
+
+			// Print code and store data if valid
+			if (isValid) {
+				d3.select('#invalidanswer').style("display", "none");
+				d3.select('#submit').attr('disabled', null);
+				d3.select('#submit').attr('class', "submit");
+			}
+			else {
+				d3.select('#invalidanswer').style("display", "inline");
+			}
+		}
+	</script>
+</body>
+
+</html>

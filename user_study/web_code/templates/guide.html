@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        Guide
+    </title>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <style type="text/css">
+        h2 {
+            font-size: 30px;
+        }
+
+        li {
+            font-size: 20px;
+            line-height: 30px;
+            border: none ! important;
+        }
+
+        #experiment_start {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="usr_info" class="usr_info">
+        <h2>User Guide</h2><br /><br />
+        {% if taskName=="highlighting" %}
+        <ul>
+            <li>
+                This experiment tests the accuracy of humans extracting quantitative information from visualizations
+                such as bar charts and pie charts.
+                You will be given a set of images in sequence. Each shows a basic data visualization with design variations.
+            </li>
+            <li>
+                Your mission is to estimate a specific value from this visualization. The target value could be the length of one bar, the angle of one sector, the length ratio of two bars,
+                or the angle ratio of two sectors, depending on the instructions given on the next page.
+            </li>
+
+            <li>
+                <b>Note that the target value should be estimated only by your visual judgment.
+                    Please do not refer to any measuring instruments like rulers or other physical objects.</b>
+            </li>
+            <li>
+                You can drag the slider to find your estimated value or type it directly into the text box.
+                After confirming your estimation, please click the "Next" button to submit and start a new trial.
+            </li>
+            <li>
+                We will first show you three examples to demonstrate how this experiment should be performed for your preparation.
+                After these examples, the experiment will officially start, and we will begin to record your performance.
+                Please do not refresh this page during the experiment, for you will be forced to start again from the beginning.
+            </li>
+            <li>
+                Now you can start the training process we prepared for you by clicking the button below. Wish you a pleasant experience!
+            </li>
+        </ul>
+        <div id="experiment_start">
+            <a class="a_button" href="/experiment/1/">Start Training!</a>
+        </div>
+        {% endif %}
+        {% if taskName=="counting" %}
+        <div>
+            <div style="width: 40%;display: inline-block;text-align: center;">
+                <img src="/static/img/guide.png" style="width: 80%;" />
+            </div>
+            <div style="width: 50%;display: inline-block;">
+                <ul>
+                    <li>
+                        In this experiment, for each trial, we will show you a scatterplot with each class of points
+                        assigned with a unique color.
+                    </li>
+                    <li>
+                        Your task is to <U>find how many classes(colors)</U> in the given scatterplot as accurately as
+                        you can.
+                    </li>
+                    <li>
+                        To help you understand how to do this task, we will first show you an example task trial,
+                        followed by 3 practice trials. Then there will be <b>{{ trialsNum }}</b> trials.
+                    </li>
+                    <li>
+                        <= In the left example task trial, 8 classes can be easily observed, thus you can select 8 at the
+                        bottom.
+                    </li>
+                    <li>
+                        The "<b>Next</b>" button only appears during training process to help you verify your answers.
+                        In the
+                        real study, when you click on the bottom button, it will turn to the next trial immediately.
+                    </li>
+                    <li>
+                        Now you can start the training process. Select the "<b>Start Training!</b>" button below to
+                        continue.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="experiment_start">
+            <a class="a_button" href="/experiment/2/">Start Training!</a>
+        </div>
+        {% endif %}
+    </div>
+</body>
+
+</html>

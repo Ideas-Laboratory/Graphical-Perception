@@ -1,0 +1,24 @@
+[
+    {
+        "path": "result/raw_result/resnet152_posLen_tp_1_sgd_hlr/tests/posLen_tp_1/Iter_464000/resultInfo.json",
+        "loss": {
+            "MLAE": {
+                "avg": 0.02239412837228588,
+                "std": 0.4464566260440786
+            },
+            "MLAE_unmatch": {
+                "avg": -3.0,
+                "std": 0.0
+            },
+            "ABS": {
+                "avg": 0.009388652992855887,
+                "std": 0.0031581906895819883
+            },
+            "ABS_unmatch": {
+                "avg": 0.0,
+                "std": 0.0
+            },
+            "count": 10000
+        }
+    }
+]

@@ -1,9 +1,0 @@
-{
-    "name":"TrainResNet",
-    "param":
-    {
-        "name":"resnet152_layer1",
-        "num_classes":"{data.generator.classCount$int}"
-    },
-    "inputSize":224
-}
