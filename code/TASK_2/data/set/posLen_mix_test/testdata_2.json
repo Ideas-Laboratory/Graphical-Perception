@@ -1,0 +1,39 @@
+{
+    "genType":"MixGenerator",
+    "trainPairCount":0,
+    "testPairCount":0,
+    "validPairCount":1000,
+    "padding":false,
+    "classCount":1,
+    "param":
+    {
+        "generators":
+        [
+            {
+                "name":"BarGenerator",
+                "ratio":0.20,
+                "param":"{$include} detail/position_length_type_1_dotpos_1.json"
+            },
+            {
+                "name":"BarGenerator",
+                "ratio":0.20,
+                "param":"{$include} detail/position_length_type_1_dotpos_3.json"
+            },
+            {
+                "name":"BarGenerator",
+                "ratio":0.20,
+                "param":"{$include} detail/position_length_type_1_dotpos_5.json"
+            },
+            {
+                "name":"BarGenerator",
+                "ratio":0.20,
+                "param":"{$include} detail/position_length_type_1_dotpos_7.json"
+            },
+            {
+                "name":"BarGenerator",
+                "ratio":0.20,
+                "param":"{$include} detail/position_length_type_1_dotpos_9.json"
+            }
+        ]
+    }
+}

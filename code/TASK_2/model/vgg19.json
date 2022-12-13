@@ -1,0 +1,10 @@
+{
+    "name":"TrainVGG",
+    "param":
+    {
+        "name":"vgg19",
+        "norm":false,
+        "num_classes":"{data.generator.classCount$int}"
+    },
+    "inputSize":100
+}

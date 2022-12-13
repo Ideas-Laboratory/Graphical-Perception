@@ -1,0 +1,9 @@
+{
+    "genType":"BarGenerator",
+    "trainPairCount":60000,
+    "testPairCount":20000,
+    "validPairCount":20000,
+    "padding":false,
+    "classCount":1,
+    "param":"{$include} detail/posLen_random_c/position_length_type_1_mask_point.json"
+}

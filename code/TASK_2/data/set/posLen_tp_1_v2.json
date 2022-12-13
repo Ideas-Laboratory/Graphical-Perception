@@ -1,0 +1,9 @@
+{
+    "genType":"BarGenerator",
+    "trainPairCount":16000,
+    "testPairCount":1000,
+    "validPairCount":4000,
+    "padding":false,
+    "classCount":1,
+    "param":"{$include} detail/posCompare/position_length_type_1_v2.json"
+}

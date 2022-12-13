@@ -1,0 +1,8 @@
+{
+    "name":"TrainXception",
+    "param":
+    {
+        "num_classes":"{data.generator.classCount$int}"
+    },
+    "inputSize":299
+}

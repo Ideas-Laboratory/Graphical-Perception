@@ -1,0 +1,66 @@
+{
+    "fileName": "bar_type1_%d",
+    "outputWidth": 100,
+    "outputHeight": 100,
+    "barCount": 10,
+    "barWidth": 1,
+    "color": {
+        "colorDiffLeast": 5,
+        "useFixSettingChance": 1.0,
+        "fillRectChance": 1.0,
+        "fixColorBar": {
+            "colorIsFixed": false,
+            "color": [
+                0,
+                0,
+                0
+            ]
+        },
+        "background": {
+            "colorIsFixed": false,
+            "color": [
+                255,
+                255,
+                255
+            ]
+        },
+        "fixStroke": {
+            "colorIsFixed": false
+        }
+    },
+    "lineThickness": 1,
+    "spacePaddingLeft": 2,
+    "spacePaddingRight": 1,
+    "spacePaddingTop": 0,
+    "spacePaddingBottom": 1,
+    "labelValue": 1,
+    "midGap": 4,
+    "fixBarGap": -1,
+    "values": {
+        "valueRange": [
+            10,
+            93
+        ],
+        "pixelValue": true,
+        "useSpecialGen": false
+    },
+    "mark": {
+        "dotColor": [
+            0,
+            0,
+            0
+        ],
+        "genFix": 2,
+        "fix": [],
+        "ratio": {
+            "ratioMarkOnly": false,
+            "ratio2Only": false,
+            "ratioNotMarkOnly": false,
+            "ratio2MarkOnly": true
+        },
+        "bottom": true,
+        "bottomValue": 5
+    },
+    "TitlePosition": "left",
+    "TitlePaddingLeft": 0.7000000000000002
+}

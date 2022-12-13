@@ -1,0 +1,25 @@
+{
+    "useThreads":1,
+    "trainSeed":100,
+    "validSeed":10000,
+    "trainPath":"{utility.mainPath}/dataset/{$datasetName}/train",
+    "validPath":"{utility.mainPath}/dataset/{$datasetName}/valid",
+    "inputFolder":"input",
+    "outputFolder":"target",
+    "manageType":"DatasetAOpt",
+    "orgFolder":"org",
+    "width":"{inputImageSize$int}",
+    "height":"{inputImageSize$int}",
+    "generator":"{$include} set/{$datasetName}.json",
+    "manageParam":
+    {
+        "cacheFolder":"{utility.mainPath}/dataset/{$datasetName}/cache",
+        "enableNoise":true,
+        "noise":0.025,
+        "enablePaddingInputLabel":true,
+        "paddingTo":-1,
+        "enableDiskCache":false,
+        "enableRAMcache":false,
+        "enableImagePadding":"{data.generator.padding$bool}"
+    }
+}

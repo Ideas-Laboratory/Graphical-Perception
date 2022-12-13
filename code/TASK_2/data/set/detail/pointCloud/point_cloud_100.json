@@ -1,0 +1,14 @@
+{
+    "fileName":"point_%d",
+    "outputWidth":100,
+    "outputHeight":100,
+    "labelValue":1,
+    "pointCount":100,
+    "pointCountAdd":10,
+    "outputAddValue":true,
+    "color":
+    {
+        "dotColor":[0,0,0],
+        "backColor":[255,255,255]
+    }
+}

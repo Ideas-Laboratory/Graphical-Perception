@@ -1,0 +1,9 @@
+{
+    "name":"TrainResNet",
+    "param":
+    {
+        "name":"resnet50_mask",
+        "num_classes":"{data.generator.classCount$int}"
+    },
+    "inputSize":224
+}

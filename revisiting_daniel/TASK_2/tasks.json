@@ -1,0 +1,3093 @@
+[
+    {
+        "id": "f62e443784647e3b5905516d7535f322",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName debug_pc",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "c809f9efaa72c2b403f4a4b287f0f300",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName ele_angle",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "7454defecc2ce8e2eacc55df16ad7c1a",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName ele_area",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "606a24e748fd458ad60a8d46404c1663",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName ele_curvature",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "c34e56ac1b68ac83dad06d96813642e3",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName ele_direction",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "5391c077e3c72e9979bfb91c84ace518",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName ele_length",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "e09dd39a6025b3d2657f9600cf378aaa",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName ele_posCommon",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "46a55211b407529c3ed17ce6757b7cf8",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName ele_posNonAlign",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "5553c8feaaed9554289d51d9c6ca9f70",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName ele_shading",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "203fb44c13077d2f265133a7ffb28373",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName ele_volume",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "3dce88c5ea510768b8b6cf6ff2cdeeba",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName pointCloud_10",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "9d771bccefc1018bd3540ee5583bd334",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName pointCloud_100",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "31ecc686b21f3b166e878075530b8417",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName pointCloud_1000",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "4be8349732abaeca18a68e92a7fdd956",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName pointCloud_1000_lowc",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "397d5bb63000c4aafb3d7c6db4596892",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName pointCloud_100_lowc",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "6ecd9b48c91c60d64f4bd753db855904",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName pointCloud_10_lowc",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "ec3d36c88e7b4d32315c1a5f3081e375",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName pointCloud_mix",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "88eccd242c6e663c667e3c84279d1d0c",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName posAngle_bar",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "168d7c39bd894664d33fac4e7a46e445",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName posAngle_bar_v1",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "8919039b7a06142b0cdc712d3413a2e1",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName posAngle_mix",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "482836a7109382800ca781b5f2a32f2d",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName posAngle_pie",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "beeef2230f7cdd3241a4c204a5c10427",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName posLen_tp_1",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "3f1de265e99b270ed20be381ec717099",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName posLen_tp_1_nodot",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "d3ff3b82ccb99a1665d39cda26eec87d",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName posLen_tp_1_rand",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "3beb853cc4cfecb0ee8fbfbd108a7cd7",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName posLen_tp_1_v1",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "f5ca3c64248f8ab7d1cdc7d01191f2d1",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName posLen_tp_2",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "9cf6253b9fde8bb332a13fe5353882f8",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName posLen_tp_2_nodot",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "6d0f9d79c3cf34f30387500905bd01b2",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName posLen_tp_2_rand",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "2f89c9e0aa2bdc695cf51250e915d265",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName posLen_tp_3",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "335f4eebfd48f0acf704a75be02efa8d",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName posLen_tp_3_nodot",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "54dd4170bdf72a7bc1013819082df7cd",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName posLen_tp_4",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "68483e1467bfa08d4779bf1a23e0a181",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName posLen_tp_4_nodot",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "035213e7bfada4b93ac7e54057371d09",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName posLen_tp_5",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "1382699b55a80d8392b2d8a12448c564",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName posLen_tp_5_nodot",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "efca5505a4117fac5533c890196dc945",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName posLen_tp_mix",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "9fc4ab17ec819b5747efd8cf89e5d018",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName posLen_tp_mix_fixm",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "d963b4bfe8625d879f40503fd5f32c15",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName posLen_tp_mix_nodot",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "d5b78f9383731c52697db968d6253596",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName posLen_tp_mix_nonfixm",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "b49a8315932d9f71be307647ad3e3119",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName posLen_tp_mix_rand",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "6426ec31683cd0bcb48cb448a938edbf",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName posLen_tp_mix_rand_20n",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "39f5b51429c6843c62096f5db77991a8",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName posLen_tp_mix_rand_5n",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "d99d842ca33961e235a405657ac02d9c",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName posLen_tp_mix_rand_c",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "cecd77c7c618be4e3362f69a41eb56ee",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName posLen_tp_mix_rand_cl",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "af53dce8105203c53d1e88262f8f85fc",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName posLen_tp_mix_rand_nodot",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "22be8379ed038b90aca4e3f9bfb40422",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName posLen_tp_mix_rand_nodot_c",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "b254ba513e9844f182369577c94007b7",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName posLen_tp_mix_rand_nodot_cl",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "53dedf50e23a979b699e63741d92ab71",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName visCue_framed",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "707f1ee519f6a8de28c6ab1596304e82",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName visCue_mix",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "29b4d5cdf45d439f55d2e0f80fe53aab",
+        "waitID": [],
+        "res": {
+            "disk": 40,
+            "gpu": 0
+        },
+        "cmd": "python3 GenDataset.py --config_file TASK_2/genData.json --datasetName visCue_nonframed",
+        "rerun": true,
+        "weight": 999
+    },
+    {
+        "id": "4c2cb63b6c5a70f4a8cc8999d7eae38e",
+        "waitID": [
+            "88eccd242c6e663c667e3c84279d1d0c"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName posAngle_bar --modelName vgg19",
+        "rerun": false,
+        "weight": 401
+    },
+    {
+        "id": "65cc17acb1c6a32b9c4f068b48423119",
+        "waitID": [
+            "4c2cb63b6c5a70f4a8cc8999d7eae38e",
+            "88eccd242c6e663c667e3c84279d1d0c"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName posAngle_bar --modelName vgg19 --datasetName posAngle_bar",
+        "rerun": true,
+        "weight": 401
+    },
+    {
+        "id": "9c08628043413697d31b0a4abd2181fe",
+        "waitID": [
+            "482836a7109382800ca781b5f2a32f2d"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName posAngle_pie --modelName vgg19",
+        "rerun": false,
+        "weight": 401
+    },
+    {
+        "id": "e200c55807394098193683fde1fecabb",
+        "waitID": [
+            "9c08628043413697d31b0a4abd2181fe",
+            "482836a7109382800ca781b5f2a32f2d"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName posAngle_pie --modelName vgg19 --datasetName posAngle_pie",
+        "rerun": true,
+        "weight": 401
+    },
+    {
+        "id": "60953ea4a4a52f1c50905dc11c269fc0",
+        "waitID": [
+            "8919039b7a06142b0cdc712d3413a2e1"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName posAngle_mix --modelName vgg19",
+        "rerun": false,
+        "weight": 401
+    },
+    {
+        "id": "6d3bd4d57daea8e795654014aebec679",
+        "waitID": [
+            "60953ea4a4a52f1c50905dc11c269fc0",
+            "8919039b7a06142b0cdc712d3413a2e1"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName posAngle_mix --modelName vgg19 --datasetName posAngle_mix",
+        "rerun": true,
+        "weight": 401
+    },
+    {
+        "id": "913e511da6066f1ffe6491df93b3d0be",
+        "waitID": [
+            "60953ea4a4a52f1c50905dc11c269fc0",
+            "8919039b7a06142b0cdc712d3413a2e1"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName posAngle_mix --modelName vgg19 --datasetName posAngle_bar",
+        "rerun": true,
+        "weight": 401
+    },
+    {
+        "id": "c20677450fe4354118ad83fd71b26773",
+        "waitID": [
+            "60953ea4a4a52f1c50905dc11c269fc0",
+            "8919039b7a06142b0cdc712d3413a2e1"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName posAngle_mix --modelName vgg19 --datasetName posAngle_pie",
+        "rerun": true,
+        "weight": 401
+    },
+    {
+        "id": "541f1b143714b9def9a79e22de277e0a",
+        "waitID": [
+            "beeef2230f7cdd3241a4c204a5c10427"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName posLen_tp_1 --modelName vgg19",
+        "rerun": false,
+        "weight": 402
+    },
+    {
+        "id": "32f5ee301ca99b00262e1c3c925670dd",
+        "waitID": [
+            "541f1b143714b9def9a79e22de277e0a",
+            "beeef2230f7cdd3241a4c204a5c10427"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName posLen_tp_1 --modelName vgg19 --datasetName posLen_tp_1",
+        "rerun": true,
+        "weight": 402
+    },
+    {
+        "id": "f0b3f8de5ef938c68ac541019448382e",
+        "waitID": [
+            "f5ca3c64248f8ab7d1cdc7d01191f2d1"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName posLen_tp_2 --modelName vgg19",
+        "rerun": false,
+        "weight": 402
+    },
+    {
+        "id": "c095683aae81bd1b44874b6ad7beb568",
+        "waitID": [
+            "f0b3f8de5ef938c68ac541019448382e",
+            "f5ca3c64248f8ab7d1cdc7d01191f2d1"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName posLen_tp_2 --modelName vgg19 --datasetName posLen_tp_2",
+        "rerun": true,
+        "weight": 402
+    },
+    {
+        "id": "5ed615065d196b4a7c892fe3417aa5e9",
+        "waitID": [
+            "2f89c9e0aa2bdc695cf51250e915d265"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName posLen_tp_3 --modelName vgg19",
+        "rerun": false,
+        "weight": 402
+    },
+    {
+        "id": "f6af7582cdba5fd55b2b613fd17836e8",
+        "waitID": [
+            "5ed615065d196b4a7c892fe3417aa5e9",
+            "2f89c9e0aa2bdc695cf51250e915d265"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName posLen_tp_3 --modelName vgg19 --datasetName posLen_tp_3",
+        "rerun": true,
+        "weight": 402
+    },
+    {
+        "id": "32187bb6d06ffde6b235499c3a2dbbcb",
+        "waitID": [
+            "54dd4170bdf72a7bc1013819082df7cd"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName posLen_tp_4 --modelName vgg19",
+        "rerun": false,
+        "weight": 402
+    },
+    {
+        "id": "a316571e9fd088a5e42e73b3ec3b09d8",
+        "waitID": [
+            "32187bb6d06ffde6b235499c3a2dbbcb",
+            "54dd4170bdf72a7bc1013819082df7cd"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName posLen_tp_4 --modelName vgg19 --datasetName posLen_tp_4",
+        "rerun": true,
+        "weight": 402
+    },
+    {
+        "id": "d50a4bfbafe731e5ea0dba40cc72c967",
+        "waitID": [
+            "035213e7bfada4b93ac7e54057371d09"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName posLen_tp_5 --modelName vgg19",
+        "rerun": false,
+        "weight": 402
+    },
+    {
+        "id": "8f180af22a6eece8fb7cb11669d3d1e2",
+        "waitID": [
+            "d50a4bfbafe731e5ea0dba40cc72c967",
+            "035213e7bfada4b93ac7e54057371d09"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName posLen_tp_5 --modelName vgg19 --datasetName posLen_tp_5",
+        "rerun": true,
+        "weight": 402
+    },
+    {
+        "id": "8fbeb7f90230f6dc45fafa94532fbb3f",
+        "waitID": [
+            "efca5505a4117fac5533c890196dc945"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName posLen_tp_mix --modelName vgg19",
+        "rerun": false,
+        "weight": 402
+    },
+    {
+        "id": "1d08e3d641c79ee9e4bb3a564f6491a3",
+        "waitID": [
+            "8fbeb7f90230f6dc45fafa94532fbb3f",
+            "efca5505a4117fac5533c890196dc945"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName posLen_tp_mix --modelName vgg19 --datasetName posLen_tp_mix",
+        "rerun": true,
+        "weight": 402
+    },
+    {
+        "id": "168bf1b4520362434b4d1beef9663bb0",
+        "waitID": [
+            "8fbeb7f90230f6dc45fafa94532fbb3f",
+            "efca5505a4117fac5533c890196dc945"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName posLen_tp_mix --modelName vgg19 --datasetName posLen_tp_1",
+        "rerun": true,
+        "weight": 402
+    },
+    {
+        "id": "222f6b65842ebc6ba5985b6989184f2f",
+        "waitID": [
+            "8fbeb7f90230f6dc45fafa94532fbb3f",
+            "efca5505a4117fac5533c890196dc945"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName posLen_tp_mix --modelName vgg19 --datasetName posLen_tp_2",
+        "rerun": true,
+        "weight": 402
+    },
+    {
+        "id": "803ddaec322eaf6d43ceef48f80aa6e1",
+        "waitID": [
+            "8fbeb7f90230f6dc45fafa94532fbb3f",
+            "efca5505a4117fac5533c890196dc945"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName posLen_tp_mix --modelName vgg19 --datasetName posLen_tp_3",
+        "rerun": true,
+        "weight": 402
+    },
+    {
+        "id": "8eed0cb90075011bf60ea5b55f535f28",
+        "waitID": [
+            "8fbeb7f90230f6dc45fafa94532fbb3f",
+            "efca5505a4117fac5533c890196dc945"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName posLen_tp_mix --modelName vgg19 --datasetName posLen_tp_4",
+        "rerun": true,
+        "weight": 402
+    },
+    {
+        "id": "699a68d6b084b09350a3bd2e9e8f6327",
+        "waitID": [
+            "8fbeb7f90230f6dc45fafa94532fbb3f",
+            "efca5505a4117fac5533c890196dc945"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName posLen_tp_mix --modelName vgg19 --datasetName posLen_tp_5",
+        "rerun": true,
+        "weight": 402
+    },
+    {
+        "id": "016d86ac10137f58d5a80014b616d947",
+        "waitID": [
+            "53dedf50e23a979b699e63741d92ab71"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName visCue_framed --modelName vgg19",
+        "rerun": false,
+        "weight": 399
+    },
+    {
+        "id": "ca457aaedfd7dd31e2bb8dd5008c83c9",
+        "waitID": [
+            "016d86ac10137f58d5a80014b616d947",
+            "53dedf50e23a979b699e63741d92ab71"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName visCue_framed --modelName vgg19 --datasetName visCue_framed",
+        "rerun": true,
+        "weight": 399
+    },
+    {
+        "id": "0eae5b48af9822abda5c658769eebb57",
+        "waitID": [
+            "29b4d5cdf45d439f55d2e0f80fe53aab"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName visCue_nonframed --modelName vgg19",
+        "rerun": false,
+        "weight": 399
+    },
+    {
+        "id": "14d68bc8052238568845c3f1e61501a7",
+        "waitID": [
+            "0eae5b48af9822abda5c658769eebb57",
+            "29b4d5cdf45d439f55d2e0f80fe53aab"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName visCue_nonframed --modelName vgg19 --datasetName visCue_nonframed",
+        "rerun": true,
+        "weight": 399
+    },
+    {
+        "id": "b656ea6be755fd44257ed8da372e0b66",
+        "waitID": [
+            "c809f9efaa72c2b403f4a4b287f0f300"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName ele_angle --modelName vgg19",
+        "rerun": false,
+        "weight": 398
+    },
+    {
+        "id": "75f4c7e6e1546c526dec7f76202390c8",
+        "waitID": [
+            "b656ea6be755fd44257ed8da372e0b66",
+            "c809f9efaa72c2b403f4a4b287f0f300"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName ele_angle --modelName vgg19 --datasetName ele_angle",
+        "rerun": true,
+        "weight": 398
+    },
+    {
+        "id": "25800e43530e5264117b8fb27b7298ef",
+        "waitID": [
+            "7454defecc2ce8e2eacc55df16ad7c1a"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName ele_area --modelName vgg19",
+        "rerun": false,
+        "weight": 398
+    },
+    {
+        "id": "cec02e66b5b352a910df83c819dcc118",
+        "waitID": [
+            "25800e43530e5264117b8fb27b7298ef",
+            "7454defecc2ce8e2eacc55df16ad7c1a"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName ele_area --modelName vgg19 --datasetName ele_area",
+        "rerun": true,
+        "weight": 398
+    },
+    {
+        "id": "f9feb7e0a8095d5a99399ebc25388c6d",
+        "waitID": [
+            "606a24e748fd458ad60a8d46404c1663"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName ele_curvature --modelName vgg19",
+        "rerun": false,
+        "weight": 398
+    },
+    {
+        "id": "f93cfb43e7bebe16d7710cdd8997849a",
+        "waitID": [
+            "f9feb7e0a8095d5a99399ebc25388c6d",
+            "606a24e748fd458ad60a8d46404c1663"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName ele_curvature --modelName vgg19 --datasetName ele_curvature",
+        "rerun": true,
+        "weight": 398
+    },
+    {
+        "id": "58262d2e8069b03b032823432c123685",
+        "waitID": [
+            "c34e56ac1b68ac83dad06d96813642e3"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName ele_direction --modelName vgg19",
+        "rerun": false,
+        "weight": 398
+    },
+    {
+        "id": "48d19fd46927f7fb51a8f825d0c5b252",
+        "waitID": [
+            "58262d2e8069b03b032823432c123685",
+            "c34e56ac1b68ac83dad06d96813642e3"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName ele_direction --modelName vgg19 --datasetName ele_direction",
+        "rerun": true,
+        "weight": 398
+    },
+    {
+        "id": "8b7d27ff3a819a7c4c8cf44a529a058a",
+        "waitID": [
+            "5391c077e3c72e9979bfb91c84ace518"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName ele_length --modelName vgg19",
+        "rerun": false,
+        "weight": 398
+    },
+    {
+        "id": "b73c281892e28d987c9cd437f1b7000e",
+        "waitID": [
+            "8b7d27ff3a819a7c4c8cf44a529a058a",
+            "5391c077e3c72e9979bfb91c84ace518"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName ele_length --modelName vgg19 --datasetName ele_length",
+        "rerun": true,
+        "weight": 398
+    },
+    {
+        "id": "550158e653264a266271ffd182d0fdd8",
+        "waitID": [
+            "e09dd39a6025b3d2657f9600cf378aaa"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName ele_posCommon --modelName vgg19",
+        "rerun": false,
+        "weight": 398
+    },
+    {
+        "id": "eb3655479072f2a005f736d5952c9b91",
+        "waitID": [
+            "550158e653264a266271ffd182d0fdd8",
+            "e09dd39a6025b3d2657f9600cf378aaa"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName ele_posCommon --modelName vgg19 --datasetName ele_posCommon",
+        "rerun": true,
+        "weight": 398
+    },
+    {
+        "id": "885c6d7146cd2b68846a20cc033525fa",
+        "waitID": [
+            "46a55211b407529c3ed17ce6757b7cf8"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName ele_posNonAlign --modelName vgg19",
+        "rerun": false,
+        "weight": 398
+    },
+    {
+        "id": "970ed3fcd7743c927c3f38cb15a8ea0d",
+        "waitID": [
+            "885c6d7146cd2b68846a20cc033525fa",
+            "46a55211b407529c3ed17ce6757b7cf8"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName ele_posNonAlign --modelName vgg19 --datasetName ele_posNonAlign",
+        "rerun": true,
+        "weight": 398
+    },
+    {
+        "id": "e42f44b2a9a3da7580b95c41a058fc85",
+        "waitID": [
+            "5553c8feaaed9554289d51d9c6ca9f70"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName ele_shading --modelName vgg19",
+        "rerun": false,
+        "weight": 398
+    },
+    {
+        "id": "16b84c53027d350912dd921ea5862074",
+        "waitID": [
+            "e42f44b2a9a3da7580b95c41a058fc85",
+            "5553c8feaaed9554289d51d9c6ca9f70"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName ele_shading --modelName vgg19 --datasetName ele_shading",
+        "rerun": true,
+        "weight": 398
+    },
+    {
+        "id": "2a3402e7117a3219debf7b3c4382dafe",
+        "waitID": [
+            "203fb44c13077d2f265133a7ffb28373"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName ele_volume --modelName vgg19",
+        "rerun": false,
+        "weight": 398
+    },
+    {
+        "id": "3293a822d9e3e2f1c271473772ad1e1c",
+        "waitID": [
+            "2a3402e7117a3219debf7b3c4382dafe",
+            "203fb44c13077d2f265133a7ffb28373"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName ele_volume --modelName vgg19 --datasetName ele_volume",
+        "rerun": true,
+        "weight": 398
+    },
+    {
+        "id": "46d581d5f133861b594b990e9ef9b197",
+        "waitID": [
+            "88eccd242c6e663c667e3c84279d1d0c"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName posAngle_bar --modelName resnet152",
+        "rerun": false,
+        "weight": 301
+    },
+    {
+        "id": "381ad89ade8cd95e241c2544a82ccc27",
+        "waitID": [
+            "46d581d5f133861b594b990e9ef9b197",
+            "88eccd242c6e663c667e3c84279d1d0c"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName posAngle_bar --modelName resnet152 --datasetName posAngle_bar",
+        "rerun": true,
+        "weight": 301
+    },
+    {
+        "id": "4afcd7606af9ff7d2d68805cbb83d5cf",
+        "waitID": [
+            "482836a7109382800ca781b5f2a32f2d"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName posAngle_pie --modelName resnet152",
+        "rerun": false,
+        "weight": 301
+    },
+    {
+        "id": "725df6d33f509ccea25d38e843e740ef",
+        "waitID": [
+            "4afcd7606af9ff7d2d68805cbb83d5cf",
+            "482836a7109382800ca781b5f2a32f2d"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName posAngle_pie --modelName resnet152 --datasetName posAngle_pie",
+        "rerun": true,
+        "weight": 301
+    },
+    {
+        "id": "8c1ba5ca31574dea83f29c45e262d208",
+        "waitID": [
+            "8919039b7a06142b0cdc712d3413a2e1"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName posAngle_mix --modelName resnet152",
+        "rerun": false,
+        "weight": 301
+    },
+    {
+        "id": "45f51d53b3ce9cf0876974fb84e23172",
+        "waitID": [
+            "8c1ba5ca31574dea83f29c45e262d208",
+            "8919039b7a06142b0cdc712d3413a2e1"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName posAngle_mix --modelName resnet152 --datasetName posAngle_mix",
+        "rerun": true,
+        "weight": 301
+    },
+    {
+        "id": "a2afa8d88198902a3e53f547c0142c66",
+        "waitID": [
+            "8c1ba5ca31574dea83f29c45e262d208",
+            "8919039b7a06142b0cdc712d3413a2e1"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName posAngle_mix --modelName resnet152 --datasetName posAngle_bar",
+        "rerun": true,
+        "weight": 301
+    },
+    {
+        "id": "9f7e9f2b0e880a82c793078eb6607637",
+        "waitID": [
+            "8c1ba5ca31574dea83f29c45e262d208",
+            "8919039b7a06142b0cdc712d3413a2e1"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName posAngle_mix --modelName resnet152 --datasetName posAngle_pie",
+        "rerun": true,
+        "weight": 301
+    },
+    {
+        "id": "59f343db6fb0eda9762b00fe817e73d3",
+        "waitID": [
+            "beeef2230f7cdd3241a4c204a5c10427"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName posLen_tp_1 --modelName resnet152",
+        "rerun": false,
+        "weight": 302
+    },
+    {
+        "id": "a7b07f6c06dd838e7f03de97babf8ad0",
+        "waitID": [
+            "59f343db6fb0eda9762b00fe817e73d3",
+            "beeef2230f7cdd3241a4c204a5c10427"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName posLen_tp_1 --modelName resnet152 --datasetName posLen_tp_1",
+        "rerun": true,
+        "weight": 302
+    },
+    {
+        "id": "3bd2cf37dad6faf412c51d93783570c9",
+        "waitID": [
+            "f5ca3c64248f8ab7d1cdc7d01191f2d1"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName posLen_tp_2 --modelName resnet152",
+        "rerun": false,
+        "weight": 302
+    },
+    {
+        "id": "aff6815bcc663c492a3602d3a801b740",
+        "waitID": [
+            "3bd2cf37dad6faf412c51d93783570c9",
+            "f5ca3c64248f8ab7d1cdc7d01191f2d1"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName posLen_tp_2 --modelName resnet152 --datasetName posLen_tp_2",
+        "rerun": true,
+        "weight": 302
+    },
+    {
+        "id": "5a908aeb1d70cbfec7594b30dabacd7f",
+        "waitID": [
+            "2f89c9e0aa2bdc695cf51250e915d265"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName posLen_tp_3 --modelName resnet152",
+        "rerun": false,
+        "weight": 302
+    },
+    {
+        "id": "7a6bd6f619842f63888f47ea62ac5451",
+        "waitID": [
+            "5a908aeb1d70cbfec7594b30dabacd7f",
+            "2f89c9e0aa2bdc695cf51250e915d265"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName posLen_tp_3 --modelName resnet152 --datasetName posLen_tp_3",
+        "rerun": true,
+        "weight": 302
+    },
+    {
+        "id": "16520df88b32383c91c564953e27be0e",
+        "waitID": [
+            "54dd4170bdf72a7bc1013819082df7cd"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName posLen_tp_4 --modelName resnet152",
+        "rerun": false,
+        "weight": 302
+    },
+    {
+        "id": "45990d4b5d42b35d790909a423284c86",
+        "waitID": [
+            "16520df88b32383c91c564953e27be0e",
+            "54dd4170bdf72a7bc1013819082df7cd"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName posLen_tp_4 --modelName resnet152 --datasetName posLen_tp_4",
+        "rerun": true,
+        "weight": 302
+    },
+    {
+        "id": "050d7394b4723c36bccb7581361a30d4",
+        "waitID": [
+            "035213e7bfada4b93ac7e54057371d09"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName posLen_tp_5 --modelName resnet152",
+        "rerun": false,
+        "weight": 302
+    },
+    {
+        "id": "5c0e05dbd6dcbdf1f12d4a5122d0fd0c",
+        "waitID": [
+            "050d7394b4723c36bccb7581361a30d4",
+            "035213e7bfada4b93ac7e54057371d09"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName posLen_tp_5 --modelName resnet152 --datasetName posLen_tp_5",
+        "rerun": true,
+        "weight": 302
+    },
+    {
+        "id": "dd66b121315000b31f0ab97ddc7e3aac",
+        "waitID": [
+            "efca5505a4117fac5533c890196dc945"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName posLen_tp_mix --modelName resnet152",
+        "rerun": false,
+        "weight": 302
+    },
+    {
+        "id": "d5c83f73293189348b03d8546071394d",
+        "waitID": [
+            "dd66b121315000b31f0ab97ddc7e3aac",
+            "efca5505a4117fac5533c890196dc945"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName posLen_tp_mix --modelName resnet152 --datasetName posLen_tp_mix",
+        "rerun": true,
+        "weight": 302
+    },
+    {
+        "id": "1aa9752e0bf60016760930d8f254a675",
+        "waitID": [
+            "dd66b121315000b31f0ab97ddc7e3aac",
+            "efca5505a4117fac5533c890196dc945"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName posLen_tp_mix --modelName resnet152 --datasetName posLen_tp_1",
+        "rerun": true,
+        "weight": 302
+    },
+    {
+        "id": "782e4591072e38fc96cfea587eefa2e6",
+        "waitID": [
+            "dd66b121315000b31f0ab97ddc7e3aac",
+            "efca5505a4117fac5533c890196dc945"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName posLen_tp_mix --modelName resnet152 --datasetName posLen_tp_2",
+        "rerun": true,
+        "weight": 302
+    },
+    {
+        "id": "d54abcc3fd990d9a4aace11d8629f044",
+        "waitID": [
+            "dd66b121315000b31f0ab97ddc7e3aac",
+            "efca5505a4117fac5533c890196dc945"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName posLen_tp_mix --modelName resnet152 --datasetName posLen_tp_3",
+        "rerun": true,
+        "weight": 302
+    },
+    {
+        "id": "7c93dd7aa1d6c510cbc82ee6ee314969",
+        "waitID": [
+            "dd66b121315000b31f0ab97ddc7e3aac",
+            "efca5505a4117fac5533c890196dc945"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName posLen_tp_mix --modelName resnet152 --datasetName posLen_tp_4",
+        "rerun": true,
+        "weight": 302
+    },
+    {
+        "id": "6341331c307076a974e2c60eab5e875f",
+        "waitID": [
+            "dd66b121315000b31f0ab97ddc7e3aac",
+            "efca5505a4117fac5533c890196dc945"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName posLen_tp_mix --modelName resnet152 --datasetName posLen_tp_5",
+        "rerun": true,
+        "weight": 302
+    },
+    {
+        "id": "15c6bffb2c7c0afff03b1f33665f5659",
+        "waitID": [
+            "53dedf50e23a979b699e63741d92ab71"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName visCue_framed --modelName resnet152",
+        "rerun": false,
+        "weight": 299
+    },
+    {
+        "id": "4a9234656260718a2940c9f53e84c202",
+        "waitID": [
+            "15c6bffb2c7c0afff03b1f33665f5659",
+            "53dedf50e23a979b699e63741d92ab71"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName visCue_framed --modelName resnet152 --datasetName visCue_framed",
+        "rerun": true,
+        "weight": 299
+    },
+    {
+        "id": "97ce4a63db5656a607e4f41f8a0963de",
+        "waitID": [
+            "29b4d5cdf45d439f55d2e0f80fe53aab"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName visCue_nonframed --modelName resnet152",
+        "rerun": false,
+        "weight": 299
+    },
+    {
+        "id": "85d0f0822f948ef02075ccad1b4964e6",
+        "waitID": [
+            "97ce4a63db5656a607e4f41f8a0963de",
+            "29b4d5cdf45d439f55d2e0f80fe53aab"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName visCue_nonframed --modelName resnet152 --datasetName visCue_nonframed",
+        "rerun": true,
+        "weight": 299
+    },
+    {
+        "id": "bb146c6e1aa86711d4698bbe733894af",
+        "waitID": [
+            "c809f9efaa72c2b403f4a4b287f0f300"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName ele_angle --modelName resnet152",
+        "rerun": false,
+        "weight": 298
+    },
+    {
+        "id": "f95e2dedb7554a73e8ecef960c90c693",
+        "waitID": [
+            "bb146c6e1aa86711d4698bbe733894af",
+            "c809f9efaa72c2b403f4a4b287f0f300"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName ele_angle --modelName resnet152 --datasetName ele_angle",
+        "rerun": true,
+        "weight": 298
+    },
+    {
+        "id": "bb07703fb8c12ca02471104aee79ab2d",
+        "waitID": [
+            "7454defecc2ce8e2eacc55df16ad7c1a"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName ele_area --modelName resnet152",
+        "rerun": false,
+        "weight": 298
+    },
+    {
+        "id": "51deccb586e6460b798011b819f7ee3f",
+        "waitID": [
+            "bb07703fb8c12ca02471104aee79ab2d",
+            "7454defecc2ce8e2eacc55df16ad7c1a"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName ele_area --modelName resnet152 --datasetName ele_area",
+        "rerun": true,
+        "weight": 298
+    },
+    {
+        "id": "a48894bf6849e92570d1b817348483d1",
+        "waitID": [
+            "606a24e748fd458ad60a8d46404c1663"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName ele_curvature --modelName resnet152",
+        "rerun": false,
+        "weight": 298
+    },
+    {
+        "id": "7a030e1e546b4c9a4b94af974388f159",
+        "waitID": [
+            "a48894bf6849e92570d1b817348483d1",
+            "606a24e748fd458ad60a8d46404c1663"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName ele_curvature --modelName resnet152 --datasetName ele_curvature",
+        "rerun": true,
+        "weight": 298
+    },
+    {
+        "id": "65ad61c945eacdeec6d7a2e2a2069df6",
+        "waitID": [
+            "c34e56ac1b68ac83dad06d96813642e3"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName ele_direction --modelName resnet152",
+        "rerun": false,
+        "weight": 298
+    },
+    {
+        "id": "b3a6e02d8f071b3f4f33991c82bc24f8",
+        "waitID": [
+            "65ad61c945eacdeec6d7a2e2a2069df6",
+            "c34e56ac1b68ac83dad06d96813642e3"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName ele_direction --modelName resnet152 --datasetName ele_direction",
+        "rerun": true,
+        "weight": 298
+    },
+    {
+        "id": "d17173ca862ff05ed3c77bfc62dd0731",
+        "waitID": [
+            "5391c077e3c72e9979bfb91c84ace518"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName ele_length --modelName resnet152",
+        "rerun": false,
+        "weight": 298
+    },
+    {
+        "id": "b24f9af83f20fde6fb9d8bfd85c15897",
+        "waitID": [
+            "d17173ca862ff05ed3c77bfc62dd0731",
+            "5391c077e3c72e9979bfb91c84ace518"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName ele_length --modelName resnet152 --datasetName ele_length",
+        "rerun": true,
+        "weight": 298
+    },
+    {
+        "id": "646a3234a3138a13802deb1354d580cd",
+        "waitID": [
+            "e09dd39a6025b3d2657f9600cf378aaa"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName ele_posCommon --modelName resnet152",
+        "rerun": false,
+        "weight": 298
+    },
+    {
+        "id": "9a0007fdd7510eb50ed3c55aab52b092",
+        "waitID": [
+            "646a3234a3138a13802deb1354d580cd",
+            "e09dd39a6025b3d2657f9600cf378aaa"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName ele_posCommon --modelName resnet152 --datasetName ele_posCommon",
+        "rerun": true,
+        "weight": 298
+    },
+    {
+        "id": "9345a10f8c6c3f8e69eb1fad370ea011",
+        "waitID": [
+            "46a55211b407529c3ed17ce6757b7cf8"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName ele_posNonAlign --modelName resnet152",
+        "rerun": false,
+        "weight": 298
+    },
+    {
+        "id": "55c2f55ef809e05cb01052682a5e16d6",
+        "waitID": [
+            "9345a10f8c6c3f8e69eb1fad370ea011",
+            "46a55211b407529c3ed17ce6757b7cf8"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName ele_posNonAlign --modelName resnet152 --datasetName ele_posNonAlign",
+        "rerun": true,
+        "weight": 298
+    },
+    {
+        "id": "77723798fe573c04569f907cdf56d092",
+        "waitID": [
+            "5553c8feaaed9554289d51d9c6ca9f70"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName ele_shading --modelName resnet152",
+        "rerun": false,
+        "weight": 298
+    },
+    {
+        "id": "74e684efa8782201a9222c33caf3f5b8",
+        "waitID": [
+            "77723798fe573c04569f907cdf56d092",
+            "5553c8feaaed9554289d51d9c6ca9f70"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName ele_shading --modelName resnet152 --datasetName ele_shading",
+        "rerun": true,
+        "weight": 298
+    },
+    {
+        "id": "d233f50a1d51c7826df69be7d076a4c1",
+        "waitID": [
+            "203fb44c13077d2f265133a7ffb28373"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_low_weight_decay.json --datasetName ele_volume --modelName resnet152",
+        "rerun": false,
+        "weight": 298
+    },
+    {
+        "id": "4af61e4c18633f5b450512fda426c2f1",
+        "waitID": [
+            "d233f50a1d51c7826df69be7d076a4c1",
+            "203fb44c13077d2f265133a7ffb28373"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_low_weight_decay.json --trainDatasetName ele_volume --modelName resnet152 --datasetName ele_volume",
+        "rerun": true,
+        "weight": 298
+    },
+    {
+        "id": "dfba69890da2843d9ee9e0a211793f93",
+        "waitID": [
+            "88eccd242c6e663c667e3c84279d1d0c"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName posAngle_bar --modelName vgg19",
+        "rerun": false,
+        "weight": 201
+    },
+    {
+        "id": "d00778ee87e03303bcdebcd670f3531d",
+        "waitID": [
+            "dfba69890da2843d9ee9e0a211793f93",
+            "88eccd242c6e663c667e3c84279d1d0c"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName posAngle_bar --modelName vgg19 --datasetName posAngle_bar",
+        "rerun": true,
+        "weight": 201
+    },
+    {
+        "id": "154fa08557dcd15d8114060b5c566c01",
+        "waitID": [
+            "482836a7109382800ca781b5f2a32f2d"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName posAngle_pie --modelName vgg19",
+        "rerun": false,
+        "weight": 201
+    },
+    {
+        "id": "394b60f69a331ad9d1a3040841802f7a",
+        "waitID": [
+            "154fa08557dcd15d8114060b5c566c01",
+            "482836a7109382800ca781b5f2a32f2d"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName posAngle_pie --modelName vgg19 --datasetName posAngle_pie",
+        "rerun": true,
+        "weight": 201
+    },
+    {
+        "id": "1fcdc0b3692405edbef613c3dfdd4edb",
+        "waitID": [
+            "8919039b7a06142b0cdc712d3413a2e1"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName posAngle_mix --modelName vgg19",
+        "rerun": false,
+        "weight": 201
+    },
+    {
+        "id": "b4fa27ef5218fdf5b79316ad9a73f023",
+        "waitID": [
+            "1fcdc0b3692405edbef613c3dfdd4edb",
+            "8919039b7a06142b0cdc712d3413a2e1"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName posAngle_mix --modelName vgg19 --datasetName posAngle_mix",
+        "rerun": true,
+        "weight": 201
+    },
+    {
+        "id": "bd51ace903221085938fd74b048b5274",
+        "waitID": [
+            "1fcdc0b3692405edbef613c3dfdd4edb",
+            "8919039b7a06142b0cdc712d3413a2e1"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName posAngle_mix --modelName vgg19 --datasetName posAngle_bar",
+        "rerun": true,
+        "weight": 201
+    },
+    {
+        "id": "d720bc381e52526d492a0a810dba9ab7",
+        "waitID": [
+            "1fcdc0b3692405edbef613c3dfdd4edb",
+            "8919039b7a06142b0cdc712d3413a2e1"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName posAngle_mix --modelName vgg19 --datasetName posAngle_pie",
+        "rerun": true,
+        "weight": 201
+    },
+    {
+        "id": "1b7ec5978036c1073b755c5546d06b2b",
+        "waitID": [
+            "beeef2230f7cdd3241a4c204a5c10427"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName posLen_tp_1 --modelName vgg19",
+        "rerun": false,
+        "weight": 202
+    },
+    {
+        "id": "f3a7d00d1b1db9fc878ad8a4c6b4a6d4",
+        "waitID": [
+            "1b7ec5978036c1073b755c5546d06b2b",
+            "beeef2230f7cdd3241a4c204a5c10427"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName posLen_tp_1 --modelName vgg19 --datasetName posLen_tp_1",
+        "rerun": true,
+        "weight": 202
+    },
+    {
+        "id": "98f5dd1523efb629052fd43f143baeac",
+        "waitID": [
+            "f5ca3c64248f8ab7d1cdc7d01191f2d1"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName posLen_tp_2 --modelName vgg19",
+        "rerun": false,
+        "weight": 202
+    },
+    {
+        "id": "5b971e4924880c457373f2fcc840b542",
+        "waitID": [
+            "98f5dd1523efb629052fd43f143baeac",
+            "f5ca3c64248f8ab7d1cdc7d01191f2d1"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName posLen_tp_2 --modelName vgg19 --datasetName posLen_tp_2",
+        "rerun": true,
+        "weight": 202
+    },
+    {
+        "id": "9bbfdfb9a5c2f858af6cf098d6d72fc0",
+        "waitID": [
+            "2f89c9e0aa2bdc695cf51250e915d265"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName posLen_tp_3 --modelName vgg19",
+        "rerun": false,
+        "weight": 202
+    },
+    {
+        "id": "3d81c4b2b17e2537addee368a01fdf27",
+        "waitID": [
+            "9bbfdfb9a5c2f858af6cf098d6d72fc0",
+            "2f89c9e0aa2bdc695cf51250e915d265"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName posLen_tp_3 --modelName vgg19 --datasetName posLen_tp_3",
+        "rerun": true,
+        "weight": 202
+    },
+    {
+        "id": "f40749df1cdfea78d391adb3ada35795",
+        "waitID": [
+            "54dd4170bdf72a7bc1013819082df7cd"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName posLen_tp_4 --modelName vgg19",
+        "rerun": false,
+        "weight": 202
+    },
+    {
+        "id": "d90f040a27dceb29e8cd29881a92ef00",
+        "waitID": [
+            "f40749df1cdfea78d391adb3ada35795",
+            "54dd4170bdf72a7bc1013819082df7cd"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName posLen_tp_4 --modelName vgg19 --datasetName posLen_tp_4",
+        "rerun": true,
+        "weight": 202
+    },
+    {
+        "id": "11958eaa5ca8966aca181c5e62d3f23e",
+        "waitID": [
+            "035213e7bfada4b93ac7e54057371d09"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName posLen_tp_5 --modelName vgg19",
+        "rerun": false,
+        "weight": 202
+    },
+    {
+        "id": "ce0ead2db293d0e2dce81dfc5641857d",
+        "waitID": [
+            "11958eaa5ca8966aca181c5e62d3f23e",
+            "035213e7bfada4b93ac7e54057371d09"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName posLen_tp_5 --modelName vgg19 --datasetName posLen_tp_5",
+        "rerun": true,
+        "weight": 202
+    },
+    {
+        "id": "9fb8d007980db501ed30722fabd2a04e",
+        "waitID": [
+            "efca5505a4117fac5533c890196dc945"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName posLen_tp_mix --modelName vgg19",
+        "rerun": false,
+        "weight": 202
+    },
+    {
+        "id": "d2d072767b89666e394669306992a113",
+        "waitID": [
+            "9fb8d007980db501ed30722fabd2a04e",
+            "efca5505a4117fac5533c890196dc945"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName posLen_tp_mix --modelName vgg19 --datasetName posLen_tp_mix",
+        "rerun": true,
+        "weight": 202
+    },
+    {
+        "id": "01b51f48d0264c36215efc55e49707a9",
+        "waitID": [
+            "9fb8d007980db501ed30722fabd2a04e",
+            "efca5505a4117fac5533c890196dc945"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName posLen_tp_mix --modelName vgg19 --datasetName posLen_tp_1",
+        "rerun": true,
+        "weight": 202
+    },
+    {
+        "id": "b05bbf33d9d50d9ce311db1d21a4453d",
+        "waitID": [
+            "9fb8d007980db501ed30722fabd2a04e",
+            "efca5505a4117fac5533c890196dc945"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName posLen_tp_mix --modelName vgg19 --datasetName posLen_tp_2",
+        "rerun": true,
+        "weight": 202
+    },
+    {
+        "id": "d7a8d3956013dbaff5fc6b02545b8b00",
+        "waitID": [
+            "9fb8d007980db501ed30722fabd2a04e",
+            "efca5505a4117fac5533c890196dc945"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName posLen_tp_mix --modelName vgg19 --datasetName posLen_tp_3",
+        "rerun": true,
+        "weight": 202
+    },
+    {
+        "id": "4eea7513beb7552a247062aa2d9bec3f",
+        "waitID": [
+            "9fb8d007980db501ed30722fabd2a04e",
+            "efca5505a4117fac5533c890196dc945"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName posLen_tp_mix --modelName vgg19 --datasetName posLen_tp_4",
+        "rerun": true,
+        "weight": 202
+    },
+    {
+        "id": "eb37267ce56d5e446ec58edc5d709580",
+        "waitID": [
+            "9fb8d007980db501ed30722fabd2a04e",
+            "efca5505a4117fac5533c890196dc945"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName posLen_tp_mix --modelName vgg19 --datasetName posLen_tp_5",
+        "rerun": true,
+        "weight": 202
+    },
+    {
+        "id": "2cfa36f71ff229b382446bacc7711a32",
+        "waitID": [
+            "53dedf50e23a979b699e63741d92ab71"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName visCue_framed --modelName vgg19",
+        "rerun": false,
+        "weight": 199
+    },
+    {
+        "id": "52519989862ec28e8ddc60f0fb81bff2",
+        "waitID": [
+            "2cfa36f71ff229b382446bacc7711a32",
+            "53dedf50e23a979b699e63741d92ab71"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName visCue_framed --modelName vgg19 --datasetName visCue_framed",
+        "rerun": true,
+        "weight": 199
+    },
+    {
+        "id": "71c2fefc4b57a5d82c62ed07e0693c78",
+        "waitID": [
+            "29b4d5cdf45d439f55d2e0f80fe53aab"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName visCue_nonframed --modelName vgg19",
+        "rerun": false,
+        "weight": 199
+    },
+    {
+        "id": "584b4e64be0d6faa4d030ead16ddd853",
+        "waitID": [
+            "71c2fefc4b57a5d82c62ed07e0693c78",
+            "29b4d5cdf45d439f55d2e0f80fe53aab"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName visCue_nonframed --modelName vgg19 --datasetName visCue_nonframed",
+        "rerun": true,
+        "weight": 199
+    },
+    {
+        "id": "2835eee1b951935e718e6c195253bb7b",
+        "waitID": [
+            "c809f9efaa72c2b403f4a4b287f0f300"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName ele_angle --modelName vgg19",
+        "rerun": false,
+        "weight": 198
+    },
+    {
+        "id": "e5c008a5e108fa89cb552bdbdf0b7346",
+        "waitID": [
+            "2835eee1b951935e718e6c195253bb7b",
+            "c809f9efaa72c2b403f4a4b287f0f300"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName ele_angle --modelName vgg19 --datasetName ele_angle",
+        "rerun": true,
+        "weight": 198
+    },
+    {
+        "id": "ea3135afcd12d0303483db42ce69cdd7",
+        "waitID": [
+            "7454defecc2ce8e2eacc55df16ad7c1a"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName ele_area --modelName vgg19",
+        "rerun": false,
+        "weight": 198
+    },
+    {
+        "id": "011dd0bf402bcae888499463c482e4f6",
+        "waitID": [
+            "ea3135afcd12d0303483db42ce69cdd7",
+            "7454defecc2ce8e2eacc55df16ad7c1a"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName ele_area --modelName vgg19 --datasetName ele_area",
+        "rerun": true,
+        "weight": 198
+    },
+    {
+        "id": "bf4d7a03a0caad6890b7b63dfa8ccde4",
+        "waitID": [
+            "606a24e748fd458ad60a8d46404c1663"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName ele_curvature --modelName vgg19",
+        "rerun": false,
+        "weight": 198
+    },
+    {
+        "id": "30bf601983a2562404ea98ddd539f2db",
+        "waitID": [
+            "bf4d7a03a0caad6890b7b63dfa8ccde4",
+            "606a24e748fd458ad60a8d46404c1663"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName ele_curvature --modelName vgg19 --datasetName ele_curvature",
+        "rerun": true,
+        "weight": 198
+    },
+    {
+        "id": "5d840039c005c040f20c9d53a5caa6f3",
+        "waitID": [
+            "c34e56ac1b68ac83dad06d96813642e3"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName ele_direction --modelName vgg19",
+        "rerun": false,
+        "weight": 198
+    },
+    {
+        "id": "83d6799b984e70977a0c0954bf017495",
+        "waitID": [
+            "5d840039c005c040f20c9d53a5caa6f3",
+            "c34e56ac1b68ac83dad06d96813642e3"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName ele_direction --modelName vgg19 --datasetName ele_direction",
+        "rerun": true,
+        "weight": 198
+    },
+    {
+        "id": "ee98b33b04391cd320881158aff0a6b9",
+        "waitID": [
+            "5391c077e3c72e9979bfb91c84ace518"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName ele_length --modelName vgg19",
+        "rerun": false,
+        "weight": 198
+    },
+    {
+        "id": "14a204eb653a8054d479545ee74c4e4b",
+        "waitID": [
+            "ee98b33b04391cd320881158aff0a6b9",
+            "5391c077e3c72e9979bfb91c84ace518"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName ele_length --modelName vgg19 --datasetName ele_length",
+        "rerun": true,
+        "weight": 198
+    },
+    {
+        "id": "d215bd3679957a153ffafebf2de7a450",
+        "waitID": [
+            "e09dd39a6025b3d2657f9600cf378aaa"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName ele_posCommon --modelName vgg19",
+        "rerun": false,
+        "weight": 198
+    },
+    {
+        "id": "0761a0f0b72f73a4192d5fcee46d4753",
+        "waitID": [
+            "d215bd3679957a153ffafebf2de7a450",
+            "e09dd39a6025b3d2657f9600cf378aaa"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName ele_posCommon --modelName vgg19 --datasetName ele_posCommon",
+        "rerun": true,
+        "weight": 198
+    },
+    {
+        "id": "e925090d5eeeb52e632c4010e7d6bace",
+        "waitID": [
+            "46a55211b407529c3ed17ce6757b7cf8"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName ele_posNonAlign --modelName vgg19",
+        "rerun": false,
+        "weight": 198
+    },
+    {
+        "id": "1ccc7ab21641b6290386b5756ca2f9fe",
+        "waitID": [
+            "e925090d5eeeb52e632c4010e7d6bace",
+            "46a55211b407529c3ed17ce6757b7cf8"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName ele_posNonAlign --modelName vgg19 --datasetName ele_posNonAlign",
+        "rerun": true,
+        "weight": 198
+    },
+    {
+        "id": "41029b89f9e0a1d767514cfd59fe075b",
+        "waitID": [
+            "5553c8feaaed9554289d51d9c6ca9f70"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName ele_shading --modelName vgg19",
+        "rerun": false,
+        "weight": 198
+    },
+    {
+        "id": "26447e87d60d5c9dbf1fa0602aa6332d",
+        "waitID": [
+            "41029b89f9e0a1d767514cfd59fe075b",
+            "5553c8feaaed9554289d51d9c6ca9f70"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName ele_shading --modelName vgg19 --datasetName ele_shading",
+        "rerun": true,
+        "weight": 198
+    },
+    {
+        "id": "0adc5dae53cab946c1a13ddfa7fdea84",
+        "waitID": [
+            "203fb44c13077d2f265133a7ffb28373"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName ele_volume --modelName vgg19",
+        "rerun": false,
+        "weight": 198
+    },
+    {
+        "id": "30407fef50591fe388b4bf12ffbbc79a",
+        "waitID": [
+            "0adc5dae53cab946c1a13ddfa7fdea84",
+            "203fb44c13077d2f265133a7ffb28373"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName ele_volume --modelName vgg19 --datasetName ele_volume",
+        "rerun": true,
+        "weight": 198
+    },
+    {
+        "id": "9901994a14020bb6466a3e48bcf25a33",
+        "waitID": [
+            "88eccd242c6e663c667e3c84279d1d0c"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName posAngle_bar --modelName resnet152",
+        "rerun": false,
+        "weight": 101
+    },
+    {
+        "id": "bac517d0907b7159ee8748e7bb78e076",
+        "waitID": [
+            "9901994a14020bb6466a3e48bcf25a33",
+            "88eccd242c6e663c667e3c84279d1d0c"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName posAngle_bar --modelName resnet152 --datasetName posAngle_bar",
+        "rerun": true,
+        "weight": 101
+    },
+    {
+        "id": "f50f23e4fe49108e183c19bc122cf0b8",
+        "waitID": [
+            "482836a7109382800ca781b5f2a32f2d"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName posAngle_pie --modelName resnet152",
+        "rerun": false,
+        "weight": 101
+    },
+    {
+        "id": "eaf9252fd45c9728440ae90aa9baefc6",
+        "waitID": [
+            "f50f23e4fe49108e183c19bc122cf0b8",
+            "482836a7109382800ca781b5f2a32f2d"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName posAngle_pie --modelName resnet152 --datasetName posAngle_pie",
+        "rerun": true,
+        "weight": 101
+    },
+    {
+        "id": "4470752bb2b4d0ee461a2842fcad9952",
+        "waitID": [
+            "8919039b7a06142b0cdc712d3413a2e1"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName posAngle_mix --modelName resnet152",
+        "rerun": false,
+        "weight": 101
+    },
+    {
+        "id": "a45daf3add1a88d27812b97839e921a8",
+        "waitID": [
+            "4470752bb2b4d0ee461a2842fcad9952",
+            "8919039b7a06142b0cdc712d3413a2e1"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName posAngle_mix --modelName resnet152 --datasetName posAngle_mix",
+        "rerun": true,
+        "weight": 101
+    },
+    {
+        "id": "e78a8be831bcc4eab263571da1de681a",
+        "waitID": [
+            "4470752bb2b4d0ee461a2842fcad9952",
+            "8919039b7a06142b0cdc712d3413a2e1"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName posAngle_mix --modelName resnet152 --datasetName posAngle_bar",
+        "rerun": true,
+        "weight": 101
+    },
+    {
+        "id": "15269a20661992eb8cc15e3eb4a3f8bd",
+        "waitID": [
+            "4470752bb2b4d0ee461a2842fcad9952",
+            "8919039b7a06142b0cdc712d3413a2e1"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName posAngle_mix --modelName resnet152 --datasetName posAngle_pie",
+        "rerun": true,
+        "weight": 101
+    },
+    {
+        "id": "566486ea6a5a8e916b58ae2fec6b052e",
+        "waitID": [
+            "beeef2230f7cdd3241a4c204a5c10427"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName posLen_tp_1 --modelName resnet152",
+        "rerun": false,
+        "weight": 102
+    },
+    {
+        "id": "8033d249578a2ebcfee8614dd84b3b1c",
+        "waitID": [
+            "566486ea6a5a8e916b58ae2fec6b052e",
+            "beeef2230f7cdd3241a4c204a5c10427"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName posLen_tp_1 --modelName resnet152 --datasetName posLen_tp_1",
+        "rerun": true,
+        "weight": 102
+    },
+    {
+        "id": "fa7ffd60a40ae6fe4e91f6ef66e032c1",
+        "waitID": [
+            "f5ca3c64248f8ab7d1cdc7d01191f2d1"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName posLen_tp_2 --modelName resnet152",
+        "rerun": false,
+        "weight": 102
+    },
+    {
+        "id": "b516c9b4ea09ee5ec4bd9805282450b6",
+        "waitID": [
+            "fa7ffd60a40ae6fe4e91f6ef66e032c1",
+            "f5ca3c64248f8ab7d1cdc7d01191f2d1"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName posLen_tp_2 --modelName resnet152 --datasetName posLen_tp_2",
+        "rerun": true,
+        "weight": 102
+    },
+    {
+        "id": "58d30672ff4c2cf8ae77c6356864b79c",
+        "waitID": [
+            "2f89c9e0aa2bdc695cf51250e915d265"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName posLen_tp_3 --modelName resnet152",
+        "rerun": false,
+        "weight": 102
+    },
+    {
+        "id": "8370e76cf56294eb76fa5debe25a0931",
+        "waitID": [
+            "58d30672ff4c2cf8ae77c6356864b79c",
+            "2f89c9e0aa2bdc695cf51250e915d265"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName posLen_tp_3 --modelName resnet152 --datasetName posLen_tp_3",
+        "rerun": true,
+        "weight": 102
+    },
+    {
+        "id": "c784ad5190d93785a83bbc6203dce6e4",
+        "waitID": [
+            "54dd4170bdf72a7bc1013819082df7cd"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName posLen_tp_4 --modelName resnet152",
+        "rerun": false,
+        "weight": 102
+    },
+    {
+        "id": "a85f8cfdce970ca15c8f4b2ebb73fa45",
+        "waitID": [
+            "c784ad5190d93785a83bbc6203dce6e4",
+            "54dd4170bdf72a7bc1013819082df7cd"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName posLen_tp_4 --modelName resnet152 --datasetName posLen_tp_4",
+        "rerun": true,
+        "weight": 102
+    },
+    {
+        "id": "e2963fa7ebebf6c0354bd5d2afe82631",
+        "waitID": [
+            "035213e7bfada4b93ac7e54057371d09"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName posLen_tp_5 --modelName resnet152",
+        "rerun": false,
+        "weight": 102
+    },
+    {
+        "id": "de68d9dc2a2c2ec8934e6bce938ff4db",
+        "waitID": [
+            "e2963fa7ebebf6c0354bd5d2afe82631",
+            "035213e7bfada4b93ac7e54057371d09"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName posLen_tp_5 --modelName resnet152 --datasetName posLen_tp_5",
+        "rerun": true,
+        "weight": 102
+    },
+    {
+        "id": "c1ed9ba65ec3237c96983df6262d9e43",
+        "waitID": [
+            "efca5505a4117fac5533c890196dc945"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName posLen_tp_mix --modelName resnet152",
+        "rerun": false,
+        "weight": 102
+    },
+    {
+        "id": "18a076af95248e11c5c1d18e63dfeb23",
+        "waitID": [
+            "c1ed9ba65ec3237c96983df6262d9e43",
+            "efca5505a4117fac5533c890196dc945"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName posLen_tp_mix --modelName resnet152 --datasetName posLen_tp_mix",
+        "rerun": true,
+        "weight": 102
+    },
+    {
+        "id": "42f370dc527526eadebf2bc41f78fee3",
+        "waitID": [
+            "c1ed9ba65ec3237c96983df6262d9e43",
+            "efca5505a4117fac5533c890196dc945"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName posLen_tp_mix --modelName resnet152 --datasetName posLen_tp_1",
+        "rerun": true,
+        "weight": 102
+    },
+    {
+        "id": "b535197b998513a3f96ed0b315a6832b",
+        "waitID": [
+            "c1ed9ba65ec3237c96983df6262d9e43",
+            "efca5505a4117fac5533c890196dc945"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName posLen_tp_mix --modelName resnet152 --datasetName posLen_tp_2",
+        "rerun": true,
+        "weight": 102
+    },
+    {
+        "id": "3201d579909123ec6731ab9d24324902",
+        "waitID": [
+            "c1ed9ba65ec3237c96983df6262d9e43",
+            "efca5505a4117fac5533c890196dc945"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName posLen_tp_mix --modelName resnet152 --datasetName posLen_tp_3",
+        "rerun": true,
+        "weight": 102
+    },
+    {
+        "id": "51d736fd748d5b0e5186a36ea7a45de2",
+        "waitID": [
+            "c1ed9ba65ec3237c96983df6262d9e43",
+            "efca5505a4117fac5533c890196dc945"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName posLen_tp_mix --modelName resnet152 --datasetName posLen_tp_4",
+        "rerun": true,
+        "weight": 102
+    },
+    {
+        "id": "6c01be5820d3612ca5b6dc27cc5c7ce3",
+        "waitID": [
+            "c1ed9ba65ec3237c96983df6262d9e43",
+            "efca5505a4117fac5533c890196dc945"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName posLen_tp_mix --modelName resnet152 --datasetName posLen_tp_5",
+        "rerun": true,
+        "weight": 102
+    },
+    {
+        "id": "70535ca00fe809752de660f92830214a",
+        "waitID": [
+            "53dedf50e23a979b699e63741d92ab71"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName visCue_framed --modelName resnet152",
+        "rerun": false,
+        "weight": 99
+    },
+    {
+        "id": "0489c73a40cd23ac3a119e61028e0717",
+        "waitID": [
+            "70535ca00fe809752de660f92830214a",
+            "53dedf50e23a979b699e63741d92ab71"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName visCue_framed --modelName resnet152 --datasetName visCue_framed",
+        "rerun": true,
+        "weight": 99
+    },
+    {
+        "id": "0dfa091fdbee4c62a937a96aca078e34",
+        "waitID": [
+            "29b4d5cdf45d439f55d2e0f80fe53aab"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName visCue_nonframed --modelName resnet152",
+        "rerun": false,
+        "weight": 99
+    },
+    {
+        "id": "b2b30bc7f678fac05bb8e1beb21f76cf",
+        "waitID": [
+            "0dfa091fdbee4c62a937a96aca078e34",
+            "29b4d5cdf45d439f55d2e0f80fe53aab"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName visCue_nonframed --modelName resnet152 --datasetName visCue_nonframed",
+        "rerun": true,
+        "weight": 99
+    },
+    {
+        "id": "7d28cacf09f7d1b17995e4c4bbdf584f",
+        "waitID": [
+            "c809f9efaa72c2b403f4a4b287f0f300"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName ele_angle --modelName resnet152",
+        "rerun": false,
+        "weight": 98
+    },
+    {
+        "id": "dfaf3ceaac885fc8fa3c85033521df2b",
+        "waitID": [
+            "7d28cacf09f7d1b17995e4c4bbdf584f",
+            "c809f9efaa72c2b403f4a4b287f0f300"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName ele_angle --modelName resnet152 --datasetName ele_angle",
+        "rerun": true,
+        "weight": 98
+    },
+    {
+        "id": "7921e97c2ad626df30781f7fd6ef35a9",
+        "waitID": [
+            "7454defecc2ce8e2eacc55df16ad7c1a"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName ele_area --modelName resnet152",
+        "rerun": false,
+        "weight": 98
+    },
+    {
+        "id": "f080dc0d504be5c060dde9bd21691f21",
+        "waitID": [
+            "7921e97c2ad626df30781f7fd6ef35a9",
+            "7454defecc2ce8e2eacc55df16ad7c1a"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName ele_area --modelName resnet152 --datasetName ele_area",
+        "rerun": true,
+        "weight": 98
+    },
+    {
+        "id": "52999773d7815544645ccc3960035116",
+        "waitID": [
+            "606a24e748fd458ad60a8d46404c1663"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName ele_curvature --modelName resnet152",
+        "rerun": false,
+        "weight": 98
+    },
+    {
+        "id": "068d9a8811a5cdee365e7d495f54fa43",
+        "waitID": [
+            "52999773d7815544645ccc3960035116",
+            "606a24e748fd458ad60a8d46404c1663"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName ele_curvature --modelName resnet152 --datasetName ele_curvature",
+        "rerun": true,
+        "weight": 98
+    },
+    {
+        "id": "0524b3950aff9e31bd9ad60fa63992b3",
+        "waitID": [
+            "c34e56ac1b68ac83dad06d96813642e3"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName ele_direction --modelName resnet152",
+        "rerun": false,
+        "weight": 98
+    },
+    {
+        "id": "c7c91c7bdf7a75c5cd3fa655c34299dd",
+        "waitID": [
+            "0524b3950aff9e31bd9ad60fa63992b3",
+            "c34e56ac1b68ac83dad06d96813642e3"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName ele_direction --modelName resnet152 --datasetName ele_direction",
+        "rerun": true,
+        "weight": 98
+    },
+    {
+        "id": "32e1837e6400ada9da22a99de02edd03",
+        "waitID": [
+            "5391c077e3c72e9979bfb91c84ace518"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName ele_length --modelName resnet152",
+        "rerun": false,
+        "weight": 98
+    },
+    {
+        "id": "b52baccb7f4f4fdff40ecd626839048e",
+        "waitID": [
+            "32e1837e6400ada9da22a99de02edd03",
+            "5391c077e3c72e9979bfb91c84ace518"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName ele_length --modelName resnet152 --datasetName ele_length",
+        "rerun": true,
+        "weight": 98
+    },
+    {
+        "id": "943512dd9c07730c96f5ee48cc77431c",
+        "waitID": [
+            "e09dd39a6025b3d2657f9600cf378aaa"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName ele_posCommon --modelName resnet152",
+        "rerun": false,
+        "weight": 98
+    },
+    {
+        "id": "6dffcb039c018dd1e0dc269d2ff3a2a6",
+        "waitID": [
+            "943512dd9c07730c96f5ee48cc77431c",
+            "e09dd39a6025b3d2657f9600cf378aaa"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName ele_posCommon --modelName resnet152 --datasetName ele_posCommon",
+        "rerun": true,
+        "weight": 98
+    },
+    {
+        "id": "208c4c62403395aa5765e0ee39ad0436",
+        "waitID": [
+            "46a55211b407529c3ed17ce6757b7cf8"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName ele_posNonAlign --modelName resnet152",
+        "rerun": false,
+        "weight": 98
+    },
+    {
+        "id": "5a60f91db9eac2dd21c0aeb6d77b2f3f",
+        "waitID": [
+            "208c4c62403395aa5765e0ee39ad0436",
+            "46a55211b407529c3ed17ce6757b7cf8"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName ele_posNonAlign --modelName resnet152 --datasetName ele_posNonAlign",
+        "rerun": true,
+        "weight": 98
+    },
+    {
+        "id": "bf1752f99da88b037d2e3e109c673e6c",
+        "waitID": [
+            "5553c8feaaed9554289d51d9c6ca9f70"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName ele_shading --modelName resnet152",
+        "rerun": false,
+        "weight": 98
+    },
+    {
+        "id": "6feb6d36d4e556736fd63c76cef5d022",
+        "waitID": [
+            "bf1752f99da88b037d2e3e109c673e6c",
+            "5553c8feaaed9554289d51d9c6ca9f70"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName ele_shading --modelName resnet152 --datasetName ele_shading",
+        "rerun": true,
+        "weight": 98
+    },
+    {
+        "id": "969e54b07ea5661eb2b9cc9b397db0ee",
+        "waitID": [
+            "203fb44c13077d2f265133a7ffb28373"
+        ],
+        "res": {
+            "disk": 25,
+            "gpu": 40
+        },
+        "cmd": "python3 MainTrain.py --config_file TASK_2/train_SGD.json --datasetName ele_volume --modelName resnet152",
+        "rerun": false,
+        "weight": 98
+    },
+    {
+        "id": "7536143193194972ea1fb69ef49afa51",
+        "waitID": [
+            "969e54b07ea5661eb2b9cc9b397db0ee",
+            "203fb44c13077d2f265133a7ffb28373"
+        ],
+        "res": {
+            "disk": 20,
+            "gpu": 20
+        },
+        "cmd": "python3 RunTest.py --config_file TASK_2/test_SGD.json --trainDatasetName ele_volume --modelName resnet152 --datasetName ele_volume",
+        "rerun": true,
+        "weight": 98
+    }
+]

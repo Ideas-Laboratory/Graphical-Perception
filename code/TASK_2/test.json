@@ -1,0 +1,52 @@
+{
+    "name":"{$modelName}_{$trainDatasetName}_lw",
+    "utility":
+    {
+        "mainPath":"result"
+    },
+
+    "modelRefer":"{$include} model/{$modelName}.json",
+    "inputImageSize":"{modelRefer.inputSize}",
+
+    "refer":"{$include} train.json",
+    "data":"{$include} data/basicTrainConfig.json",
+
+    
+    "cuda":
+    {
+        "detectableGPU":"{$gpu}",
+        "parallel":false,
+        "use_gpu":[0,1]
+    },
+    "testOption":
+    {
+        "outputResult":"{utility.mainPath}/raw_result/{name}/tests/{$datasetName}/Iter_%d",
+        "model":
+        {
+            "basicPath":"",
+            "minIter":0
+        }
+    },
+    "validOption":
+    {
+        "outputResult":"{utility.mainPath}/raw_result/{name}/tests/{$datasetName}/Iter_%d_valid",
+        "model":
+        {
+            "basicPath":"",
+            "minIter":0
+        }
+    },
+    "mlae":
+    {
+        "outputPath":"{utility.mainPath}/raw_result/{name}/final_test/mlae_{$datasetName}"
+    },
+    "mlae_valid":
+    {
+        "outputPath":"{utility.mainPath}/raw_result/{name}/final_valid/mlae_{$datasetName}"
+    },
+    "log":
+    {
+        "path":"{utility.mainPath}/log/test/{name}_{$datasetName}.log"
+    }
+    
+}

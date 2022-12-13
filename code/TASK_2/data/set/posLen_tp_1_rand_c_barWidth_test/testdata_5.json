@@ -1,0 +1,9 @@
+{
+    "genType": "BarGenerator",
+    "trainPairCount": 0,
+    "testPairCount": 0,
+    "validPairCount": 50,
+    "padding": false,
+    "classCount": 1,
+    "param": "{$include} detail/testdata_detail_5.json"
+}

@@ -1,0 +1,39 @@
+{
+    "genType":"MixGenerator",
+    "trainPairCount":30000,
+    "testPairCount":10000,
+    "validPairCount":10000,
+    "padding":false,
+    "classCount":1,
+    "param":
+    {
+        "generators":
+        [
+            {
+                "name":"BarGenerator",
+                "ratio":0.20,
+                "param":"{$include} detail/posLen_mix/position_length_type_1_barLength_title_3.json"
+            },
+            {
+                "name":"BarGenerator",
+                "ratio":0.20,
+                "param":"{$include} detail/posLen_mix/position_length_type_1_barLength_title_4.json"
+            },
+            {
+                "name":"BarGenerator",
+                "ratio":0.20,
+                "param":"{$include} detail/posLen_mix/position_length_type_1_barLength_title_5.json"
+            },
+            {
+                "name":"BarGenerator",
+                "ratio":0.20,
+                "param":"{$include} detail/posLen_mix/position_length_type_1_barLength_title_6.json"
+            },
+            {
+                "name":"BarGenerator",
+                "ratio":0.20,
+                "param":"{$include} detail/posLen_mix/position_length_type_1_barLength_title_7.json"
+            }
+        ]
+    }
+}

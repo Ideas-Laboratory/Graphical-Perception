@@ -1,0 +1,76 @@
+{
+    "name":"{$modelName}_{$datasetName}_lwhl",
+
+    "utility":
+    {
+        "mainPath":"result",
+        "debug":false,
+        "globalSeed":0,
+        "visdomPort":-1
+    },
+    
+    "modelRefer":"{$include} model/{$modelName}.json",
+    "inputImageSize":"{modelRefer.inputSize}",
+    
+    "data":"{$include} data/basicTrainConfig.json",
+    "model":"{$include} model/{$modelName}.json",
+
+    
+    "cuda":
+    {
+        "detectableGPU":"{$gpu}",
+        "parallel":false,
+        "use_gpu":[0,1]
+    },
+    "continueTrain":
+    {
+        "autoContinue":true,
+        "enableContinue":false,
+        "fromEpoch":0
+    },
+    "trainParam":
+    {
+        "maxEpoch":1000,
+        "batchSize":32,
+        "loadThread":8,
+
+        "learnType":"Adam",
+        "learnRate":0.000010,
+
+        "adam_weight_decay":0.00001,
+        "sgd_momentum":0.9,
+
+        "learnRateMulti":"1.0",
+
+        "clipNorm":10
+    },
+    "modelOutput":
+    {
+        "modelName":"{utility.mainPath}/{name}/model_%d.pkl",
+        "modelInfo":"{utility.mainPath}/{name}/model_%d_info.json",
+        "saveEpoch":16
+    },
+    "earlyStop":
+    {
+        "enable":true,
+        "tolerateTimes":10,
+        "paramName":"loss",
+        "minValue":0.00000000001
+    },
+    "test":
+    {
+        "testEpoch":4,
+        "testResultOutputPath":"{utility.mainPath}/{name}/test",
+        "testResultIterOutputFolder":"Iter_%d",
+        "displayImageIndex":0,
+        "storeImageIndex":[0,1,2]
+    },
+    "display":
+    {
+        "updateIterInterval":1000
+    },
+    "log":
+    {
+        "path":"{utility.mainPath}/log/train/{name}.log"
+    }
+}

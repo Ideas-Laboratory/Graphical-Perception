@@ -1,0 +1,68 @@
+{
+    "fileName": "stack_type2_%d",
+    "outputWidth": 100,
+    "outputHeight": 100,
+    "stackCount": 5,
+    "stackGroup": 2,
+    "color": {
+        "colorDiffLeast": 5,
+        "useFixSettingChance": 0.0,
+        "fillRectChance": 1.0,
+        "fixColorBar": {
+            "colorIsFixed": false,
+            "color": [
+                0,
+                0,
+                0
+            ]
+        },
+        "background": {
+            "colorIsFixed": false,
+            "color": [
+                255,
+                255,
+                255
+            ]
+        },
+        "fixStroke": {
+            "colorIsFixed": false
+        }
+    },
+    "stackWidth": 30,
+    "lineThickness": 1,
+    "spacePaddingLeft": 10,
+    "spacePaddingRight": 0,
+    "spacePaddingTop": 0,
+    "spacePaddingBottom": 1,
+    "fixStackGap": 20,
+    "labelValue": 1,
+    "values": {
+        "valueRange": [
+            10,
+            93
+        ],
+        "pixelValue": false,
+        "useSpecialGen": false
+    },
+    "mark": {
+        "dotColor": [
+            0,
+            0,
+            0
+        ],
+        "genFix": 2,
+        "fix": [],
+        "markAlwaysSameGroup": true,
+        "markStackedAdjancy": true,
+        "markAdjancy": false,
+        "ratio": {
+            "ratioMarkOnly": false,
+            "ratio2Only": false,
+            "ratioNotMarkOnly": false,
+            "ratio2MarkOnly": true
+        }
+    },
+    "train": false,
+    "bgcolorL_perturbation": 5,
+    "LABperturbation": true
+}

@@ -1,0 +1,15 @@
+{
+    "utility":
+    {
+        "mainPath":"result"
+    },
+    "gpuComputeCapbility":[45,45],
+    "diskCapbility":100,
+    "useGpu":[0,1],
+    "tagFolder":"{utility.mainPath}/sche/tag",
+    "tasks":"{$include} tasks_pc2.json",
+    "log":
+    {
+        "path":"{utility.mainPath}/log/sche/{$time}.log"
+    }
+}

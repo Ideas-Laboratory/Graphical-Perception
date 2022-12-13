@@ -1,0 +1,139 @@
+{
+    "genType":"MixGenerator",
+    "trainPairCount":30000,
+    "testPairCount":10000,
+    "validPairCount":10000,
+    "padding":false,
+    "classCount":1,
+    "param":
+    {
+        "generators":
+        [
+            {
+                "name":"BarGenerator",
+                "ratio":0.04,
+                "param":"{$include} detail/posLen_mix/position_length_type_1_barWidth_title_4_3.json"
+            },
+            {
+                "name":"BarGenerator",
+                "ratio":0.04,
+                "param":"{$include} detail/posLen_mix/position_length_type_1_barWidth_title_4_4.json"
+            },
+            {
+                "name":"BarGenerator",
+                "ratio":0.04,
+                "param":"{$include} detail/posLen_mix/position_length_type_1_barWidth_title_4_5.json"
+            },
+            {
+                "name":"BarGenerator",
+                "ratio":0.04,
+                "param":"{$include} detail/posLen_mix/position_length_type_1_barWidth_title_4_6.json"
+            },
+            {
+                "name":"BarGenerator",
+                "ratio":0.04,
+                "param":"{$include} detail/posLen_mix/position_length_type_1_barWidth_title_4_7.json"
+            },
+            {
+                "name":"BarGenerator",
+                "ratio":0.04,
+                "param":"{$include} detail/posLen_mix/position_length_type_1_barWidth_title_5_3.json"
+            },
+            {
+                "name":"BarGenerator",
+                "ratio":0.04,
+                "param":"{$include} detail/posLen_mix/position_length_type_1_barWidth_title_5_4.json"
+            },
+            {
+                "name":"BarGenerator",
+                "ratio":0.04,
+                "param":"{$include} detail/posLen_mix/position_length_type_1_barWidth_title_5_5.json"
+            },
+            {
+                "name":"BarGenerator",
+                "ratio":0.04,
+                "param":"{$include} detail/posLen_mix/position_length_type_1_barWidth_title_5_6.json"
+            },
+            {
+                "name":"BarGenerator",
+                "ratio":0.04,
+                "param":"{$include} detail/posLen_mix/position_length_type_1_barWidth_title_5_7.json"
+            },
+            {
+                "name":"BarGenerator",
+                "ratio":0.04,
+                "param":"{$include} detail/posLen_mix/position_length_type_1_barWidth_title_6_3.json"
+            },
+            {
+                "name":"BarGenerator",
+                "ratio":0.04,
+                "param":"{$include} detail/posLen_mix/position_length_type_1_barWidth_title_6_4.json"
+            },
+            {
+                "name":"BarGenerator",
+                "ratio":0.04,
+                "param":"{$include} detail/posLen_mix/position_length_type_1_barWidth_title_6_5.json"
+            },
+            {
+                "name":"BarGenerator",
+                "ratio":0.04,
+                "param":"{$include} detail/posLen_mix/position_length_type_1_barWidth_title_6_6.json"
+            },
+            {
+                "name":"BarGenerator",
+                "ratio":0.04,
+                "param":"{$include} detail/posLen_mix/position_length_type_1_barWidth_title_6_7.json"
+            },
+            {
+                "name":"BarGenerator",
+                "ratio":0.04,
+                "param":"{$include} detail/posLen_mix/position_length_type_1_barWidth_title_7_3.json"
+            },
+            {
+                "name":"BarGenerator",
+                "ratio":0.04,
+                "param":"{$include} detail/posLen_mix/position_length_type_1_barWidth_title_7_4.json"
+            },
+            {
+                "name":"BarGenerator",
+                "ratio":0.04,
+                "param":"{$include} detail/posLen_mix/position_length_type_1_barWidth_title_7_5.json"
+            },
+            {
+                "name":"BarGenerator",
+                "ratio":0.04,
+                "param":"{$include} detail/posLen_mix/position_length_type_1_barWidth_title_7_6.json"
+            },
+            {
+                "name":"BarGenerator",
+                "ratio":0.04,
+                "param":"{$include} detail/posLen_mix/position_length_type_1_barWidth_title_7_7.json"
+            },
+            {
+                "name":"BarGenerator",
+                "ratio":0.04,
+                "param":"{$include} detail/posLen_mix/position_length_type_1_barWidth_title_8_3.json"
+            },
+            {
+                "name":"BarGenerator",
+                "ratio":0.04,
+                "param":"{$include} detail/posLen_mix/position_length_type_1_barWidth_title_8_4.json"
+            },
+            {
+                "name":"BarGenerator",
+                "ratio":0.04,
+                "param":"{$include} detail/posLen_mix/position_length_type_1_barWidth_title_8_5.json"
+            },
+            {
+                "name":"BarGenerator",
+                "ratio":0.04,
+                "param":"{$include} detail/posLen_mix/position_length_type_1_barWidth_title_8_6.json"
+            },
+            {
+                "name":"BarGenerator",
+                "ratio":0.04,
+                "param":"{$include} detail/posLen_mix/position_length_type_1_barWidth_title_8_7.json"
+            }
+        ]
+    }
+}
