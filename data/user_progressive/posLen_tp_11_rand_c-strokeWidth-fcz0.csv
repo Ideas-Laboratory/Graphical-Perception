@@ -1,0 +1,16 @@
+userName,label,test_id,Id,predict_value
+fcz0,posLen_tp_11_rand_c,0,977,0.19
+fcz0,posLen_tp_11_rand_c,0,340,0.92
+fcz0,posLen_tp_11_rand_c,0,293,0.58
+fcz0,posLen_tp_11_rand_c,0,869,0.92
+fcz0,posLen_tp_11_rand_c,0,270,0.52
+fcz0,posLen_tp_11_rand_c,1,839,0.8
+fcz0,posLen_tp_11_rand_c,1,727,0.9
+fcz0,posLen_tp_11_rand_c,1,574,0.93
+fcz0,posLen_tp_11_rand_c,1,818,0.66
+fcz0,posLen_tp_11_rand_c,1,408,0.18
+fcz0,posLen_tp_11_rand_c,2,639,0.57
+fcz0,posLen_tp_11_rand_c,2,267,0.25
+fcz0,posLen_tp_11_rand_c,2,27,0.75
+fcz0,posLen_tp_11_rand_c,2,182,0.78
+fcz0,posLen_tp_11_rand_c,2,42,0.95
