@@ -159,9 +159,8 @@ We opem-source the raw performance data collected from CNN evaluation and user s
 
 ### User Interface
 
-We include the paragram code for our web application used to conduct user study in `web_program_code`.
+We include the paragram code for our web application used to conduct user study in `web_program_code`. Here we show our user study procedure by taking screenshots of the interface of our web application.
 
-Here we show our user study procedure by taking screenshots of the interface of our web application.
 Step 1: User registration
 ![registration](user_study/screenshots/screenshot_1.png)
 Step 2: Task introduction
@@ -172,4 +171,4 @@ Step 4: Official trials
 ![test](user_study/screenshots/screenshot_4.png)
 Step 5: Face-to-face interview (no interface)
 
-Raw data collected from this procedure is included in `raw_results/user_data`, we provide the analysis code for processing raw data in `analyse_code` to compute MLAE values.
+Raw data collected from this procedure is included in `raw_results/user_data`, we provide the analysis code for processing raw data in `user_study/analyse_code` to compute MLAE values.
