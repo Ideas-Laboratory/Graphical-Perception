@@ -1,18 +1,16 @@
 # Supplementary Materials for Generalization of Convolutional Neural Networks on Relational Reasoning with Bar Charts
 
 ## Introduction
-We have organized and uploaded the code and data used in our experiments and evaluation. 
+We provide organized code and data used in our experiments and evaluation of CNNs' generalization on relational reasoning tasks with bar charts.
 
-We include the code for generating chart stimuli and a mini-dataset containing example visualizations without and with perturbations in the GRAPE dataset. 
+Specifically, we include the code for generating chart stimuli and a mini-dataset containing example visualizations without and with perturbations in the GRAPE dataset. 
 
 For CNN evaluation, we provide the following:
-
 - The code for the tested CNN architectures (LeNet, VGG, Xception, and ResNet).
 - Their training and testing scripts.
 - Our pre-trained models on five types of bar charts with corresponding evaluation performances.
 
 For the user study, we include the following:
-
 - The program code.
 - Screenshot of the user interface.
 - Collected raw data.
@@ -26,7 +24,7 @@ The GRAPE dataset is, to our knowledge, the first generalization benchmark datas
 
 ### File Structure
 
-```HTML
+```
 ├─eval_generalization
 	├─Dataset  -- code for generating standard visualizations
 	│          
