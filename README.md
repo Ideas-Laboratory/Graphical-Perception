@@ -54,20 +54,20 @@ Since the whole GRAPE dataset is too large and users can generate any number of 
 
 Figure below shows generated examples in the dataset, the first row is IID test stimuli, the second and third are OOD test stimuli with perturbations in *bar width* and *dot position*.
 
-### ![Examples in the mini-dataset of GRAPE](eval_generalization\GRAPE\fig_example.png)
+### ![Examples in the mini-dataset of GRAPE](eval_generalization/GRAPE/fig_example.png)
 
 ## CNN Evaluation
 ### File Structure
 
 ```
 ├─eval_generalization
-	│  Attention_Map.py  -- generating saliency map using Grad-CAM
-	│  GenDataset.py  -- generating dataset
-	│  grad_cam_.py  -- Grad-CAM
-	│  MainTrain.py  -- model training 
-	│  MLAECompute.py  --compute MLAE
-	│  MLAEcompute_again.py  -- process computing results
-	│  RunTest.py  -- model testing
+    │  Attention_Map.py  -- generating saliency map using Grad-CAM
+    │  GenDataset.py  -- generating dataset
+    │  grad_cam_.py  -- Grad-CAM
+    │  MainTrain.py  -- model training 
+    │  MLAECompute.py  --compute MLAE
+    │  MLAEcompute_again.py  -- process computing results
+    │  RunTest.py  -- model testing
     │      
     ├─Networks
     │  │  TrainResNet.py  -- ResNet
@@ -159,11 +159,11 @@ python Attention_Map.py --config_file TASK/test.json --trainDatasetName posLen_t
 
 Here are the screenshots of the interface of our program used to conduct user study.
 
-![user guide](user_study\screenshots\screenshot_1.png)
+![registration](user_study/screenshots/screenshot_1.png)
 
-![user guide](user_study\screenshots\screenshot_2.png)
+![user guide](user_study/screenshots/screenshot_2.png)
 
-![user guide](user_study\screenshots\screenshot_3.png)
+![training trial](user_study/screenshots/screenshot_3.png)
 
-![user guide](user_study\screenshots\screenshot_4.png)
+![test](user_study/screenshots/screenshot_4.png)
 
