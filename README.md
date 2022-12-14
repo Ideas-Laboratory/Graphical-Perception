@@ -136,6 +136,8 @@ python Attention_Map.py --config_file TASK/test.json --trainDatasetName posLen_t
 
 ## Raw Performance Data
 
+We opem-source the raw performance data collected from CNN evaluation and user study.
+
 ### File Structure
 
 ```
@@ -157,13 +159,17 @@ python Attention_Map.py --config_file TASK/test.json --trainDatasetName posLen_t
 
 ### User Interface
 
-Here are the screenshots of the interface of our program used to conduct user study.
+We include the paragram code for our web application used to conduct user study in `web_program_code`.
 
+Here we show our user study procedure by taking screenshots of the interface of our web application.
+Step 1: User registration
 ![registration](user_study/screenshots/screenshot_1.png)
-
+Step 2: Task introduction
 ![user guide](user_study/screenshots/screenshot_2.png)
-
+Step 3: Training trials for users to familiarize with the interface and task.
 ![training trial](user_study/screenshots/screenshot_3.png)
-
+Step 4: Official trials
 ![test](user_study/screenshots/screenshot_4.png)
+Step 5: Face-to-face interview (no interface)
 
+Raw data collected from this procedure is included in `raw_results/user_data`, we provide the analysis code for processing raw data in `analyse_code` to compute MLAE values.
