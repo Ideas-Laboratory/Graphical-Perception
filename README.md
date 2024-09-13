@@ -1,4 +1,4 @@
-# Supplementary Materials for Generalization of Convolutional Neural Networks on Relational Reasoning with Bar Charts
+# Generalization of CNNs on Relational Reasoning with Bar Charts
 
 ## Introduction
 We provide organized code and data used in our experiments and evaluation of CNNs' generalization on relational reasoning tasks with bar charts.
